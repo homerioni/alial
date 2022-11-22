@@ -1,0 +1,296 @@
+.services {
+  &__title {
+    width: 70rem;
+    margin-bottom: 6rem;
+    font-family: $tablon;
+    font-weight: 500;
+    font-size: 6rem;
+    line-height: 7.8rem;
+    letter-spacing: .03em;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 -16.9rem;
+    padding: 6rem 16.9rem;
+    background-color: $gray;
+  }
+
+  &__slider {
+    width: 109rem;
+    margin-left: 0;
+  }
+
+  &__slide {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__img-box {
+    width: 53.8rem;
+    height: 36.7rem;
+    padding: 0.4rem;
+    border-radius: 2rem;
+    background-color: #8F9D9C;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      border-radius: inherit;
+      object-fit: cover;
+    }
+  }
+
+  &__slide-content {
+    width: 52.8rem;
+  }
+
+  &__slide-sub-title {
+  }
+
+  &__slide-title {
+    margin-bottom: 4rem;
+    font-family: $tablon;
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 3.1rem;
+    letter-spacing: .03em;
+  }
+
+  &__slide-text {
+    margin-bottom: 3.6rem;
+    font-size: 2rem;
+    line-height: 2.7rem;
+  }
+
+  &__slide-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .button {
+      &:before,
+      &:after,
+      > span:before {
+        background-color: $black;
+      }
+
+      &:hover {
+        filter: brightness(1);
+
+        &:before,
+        &:after,
+        > span:before {
+          background-color: rgb(50, 50, 50);
+        }
+      }
+    }
+  }
+
+  &__price-box {
+    position: relative;
+    padding: 0.8rem 2.2rem;
+    background-color: $gray-text;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: white;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 2rem;
+      height: 2rem;
+      transform: translate(-50%, -50%);
+      border-radius: 100%;
+      background-color: $gray;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 50%;
+      width: 2rem;
+      height: 2rem;
+      transform: translate(50%, -50%);
+      border-radius: 100%;
+      background-color: $gray;
+    }
+  }
+
+  &__price {
+    margin: 0 0.6rem;
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+  }
+
+  &__currency {
+    font-weight: 600;
+  }
+
+  &__tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    width: 30rem;
+  }
+
+  &__tab {
+    position: relative;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    cursor: pointer;
+
+    &:before {
+      content: '';
+      position: absolute;
+      right: calc(100% + 3.2rem);
+      top: 50%;
+      width: 12.6rem;
+      height: 1px;
+      transform: translateY(-50%);
+      background-color: $black;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      right: calc(100% + 7.2rem);
+      top: 50%;
+      width: 8.6rem;
+      height: 4px;
+      transform: translateY(-50%);
+      background-color: $gray;
+      transition: transform .3s ease;
+    }
+
+    &.active {
+      font-weight: 600;
+
+      &:after {
+        transform: translate(-100%, -50%);
+      }
+    }
+  }
+
+  &__pagination {
+  }
+}
+
+@media (max-width: 48em) {
+  .services {
+    &__title {
+      width: 100%;
+      margin-bottom: 8rem;
+      font-size: 5.2rem;
+      line-height: 6.8rem;
+    }
+
+    &__content {
+      display: block;
+      margin: 0 -4rem;
+      padding: 5.6rem 4rem;
+      margin-bottom: 4rem;
+    }
+
+    &__slider {
+      width: 100%;
+    }
+
+    &__slide {
+      display: block;
+      height: auto;
+    }
+
+    &__img-box {
+      width: 100%;
+      height: 39.2rem;
+      padding: 0.8rem;
+      margin-bottom: 4rem;
+      border-radius: 3rem;
+    }
+
+    &__slide-content {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+    }
+
+    &__slide-sub-title {
+      margin-bottom: 5.6rem;
+      font-weight: 600;
+      font-size: 3.6rem;
+      line-height: 4.8rem;
+    }
+
+    &__slide-title {
+      font-size: 3.6rem;
+      line-height: 4.8rem;
+    }
+
+    &__slide-text {
+      margin-bottom: 6.4rem;
+      font-size: 3rem;
+      line-height: 4rem;
+    }
+
+    &__slide-footer {
+      margin-top: auto;
+    }
+
+    &__price-box {
+      padding: 1.6rem 4rem;
+      font-size: 2.6rem;
+      line-height: 3.5rem;
+
+      &:before {
+        width: 3.2rem;
+        height: 3.2rem;
+      }
+
+      &:after {
+        width: 3.2rem;
+        height: 3.2rem;
+      }
+    }
+
+    &__price {
+      margin: 0 0 0 0.8rem;
+      font-size: 3.6rem;
+      line-height: 4.8rem;
+    }
+
+    &__currency {
+    }
+
+    &__tabs {
+    }
+
+    &__tab {
+    }
+
+    .services__pagination {
+      display: flex;
+      justify-content: center;
+      gap: 3.2rem;
+
+      .swiper-pagination-bullet {
+        width: 2rem;
+        height: 2rem;
+        margin: 0;
+        background-color: #D9DCDC;
+        opacity: 1;
+      }
+
+      .swiper-pagination-bullet-active {
+        background-color: $red;
+      }
+    }
+  }
+}

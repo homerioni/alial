@@ -97,3 +97,42 @@ const sales_leader_slider = new Swiper('.sales-leader__slider', {
     },
 
 });
+
+const services_slider = new Swiper('.services__slider', {
+    direction: 'horizontal',
+    spaceBetween: rem(3),
+    slidesPerView: 1,
+    speed: 500,
+    effect: 'creative',
+    loop: true,
+
+    creativeEffect: {
+        prev: {
+            opacity: 0,
+        },
+        next: {
+            opacity: 0,
+        },
+    },
+
+    pagination: {
+        el: ".services__pagination",
+        type: 'bullets',
+        clickable: true,
+    },
+
+    autoplay: {
+        delay: 12000,
+    },
+
+    on: {
+        slideChange: function (slider) {
+            $('.services__tab').removeClass('active');
+            $('.services__tab:nth-child('+ (slider.realIndex + 1) +')').addClass('active');
+        },
+    },
+});
+
+$('.services__tab').click(function () {
+    services_slider.slideTo($(this).index() + 1);
+});
