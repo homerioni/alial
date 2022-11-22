@@ -1,0 +1,288 @@
+@import "param";
+
+body {
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 39.2rem;
+
+  @media (max-width: 48em) {
+    padding-bottom: 124rem;
+  }
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 -1.3rem 2.6rem -2.6rem #42424299;
+
+  &__container {
+    position: relative;
+    display: flex;
+    gap: 16rem;
+    padding: 6rem 0;
+  }
+
+  &__bg {
+    position: absolute;
+    left: -16.9rem;
+    top: 0;
+    width: 54.2rem;
+    height: 100%;
+    opacity: .38;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__box {
+    &--phone {
+      position: relative;
+      z-index: 1;
+      align-self: center;
+      width: 35rem;
+    }
+
+    &--logo {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__phone-box {
+    margin-bottom: 4rem;
+  }
+
+  &__phone {
+    display: block;
+    font-size: 4rem;
+    line-height: 5.4rem;
+
+    &:hover {
+      color: $gray-text;
+    }
+  }
+
+  &__phone-text {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: $gray-text;
+  }
+
+  &__list-title {
+    position: relative;
+    display: block;
+    width: fit-content;
+    margin-bottom: 2.4rem;
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 100%;
+      width: 100%;
+      height: 1px;
+      transform: scaleX(0);
+      background-color: $black;
+      transition: transform .3s ease;
+    }
+
+    &:hover {
+      &:before {
+        transform: scaleX(1);
+      }
+    }
+  }
+
+  &__list {
+    &:not(:last-child) {
+      margin-bottom: 2.8rem;
+    }
+  }
+
+  &__list-item {
+    font-size: 2rem;
+    line-height: 2.7rem;
+    color: $gray-text;
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+
+    &:hover {
+      color: $black;
+    }
+  }
+
+  &__logo-box {
+    margin-top: auto;
+  }
+
+  &__logo-text {
+    margin-bottom: 1.2rem;
+    font-size: 1.6rem;
+    color: $gray-text;
+  }
+
+  &__logo {
+    display: block;
+    width: 16rem;
+    height: 3.8rem;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__container-bottom {
+    position: relative;
+    display: flex;
+    padding: 1.2rem 0;
+    background-color: $gray;
+    font-size: 2rem;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: -16.9rem;
+      bottom: 0;
+      width: 100vw;
+      height: 100%;
+      background-color: $gray;
+    }
+
+    > * {
+      position: relative;
+
+      &:first-child {
+        width: 35rem;
+        margin-right: 16rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .footer {
+    box-shadow: 0 -2.6rem 5.2rem -5.2rem #42424299;
+
+    &__container {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 4rem;
+      padding: 8rem 4rem 5.6rem 4rem;
+    }
+
+    &__bg {
+      left: 0;
+      top: auto;
+      bottom: 0;
+      width: 100%;
+      height: 38.4rem;
+    }
+
+    &__box {
+      flex: 40%;
+
+      &--phone {
+        order: 2;
+        flex: 100%;
+        align-self: normal;
+        width: 100%;
+        margin-top: 9.6rem;
+
+        .button {
+          margin: 0 auto;
+        }
+      }
+
+      &--logo {
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 4rem;
+
+        > * {
+          flex: 40%;
+        }
+      }
+    }
+
+    &__phone-box {
+      margin-bottom: 6.4rem;
+      text-align: center;
+    }
+
+    &__phone {
+      font-size: 6rem;
+      line-height: 8rem;
+    }
+
+    &__phone-text {
+      font-size: 3rem;
+      line-height: 4rem;
+    }
+
+    &__list-title {
+      margin-bottom: 4rem;
+      font-size: 3.6rem;
+      line-height: 4.8rem;
+    }
+
+    &__list {
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
+    }
+
+    &__list-item {
+      font-size: 3rem;
+      line-height: 4rem;
+
+      &:not(:last-child) {
+        margin-bottom: 2.4rem;
+      }
+    }
+
+    &__logo-box {
+    }
+
+    &__logo-text {
+      margin-bottom: 2.8rem;
+      font-size: 2.6rem;
+    }
+
+    &__logo {
+      width: 24rem;
+      height: 5.6rem;
+    }
+
+    &__container-bottom {
+      display: block;
+      padding: 2.4rem 4rem;
+      font-size: 3rem;
+
+      &:before {
+        left: 0;
+      }
+
+      > * {
+        &:first-child {
+          width: 100%;
+          margin-right: 0;
+          margin-bottom: 1.6rem;
+        }
+      }
+    }
+  }
+}

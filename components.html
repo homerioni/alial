@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="another website">
+    <title>Страница</title>
+
+    <link rel="stylesheet" href="font/stylesheet.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 6rem;
+            padding: 10rem;
+        }
+    </style>
+</head>
+<body>
+
+
+<main>
+    <section class="breadcrumbs">
+        <div class="container breadcrumbs__container">
+            <a href="" class="breadcrumbs__item">Главная</a>
+            <a href="" class="breadcrumbs__item">Каталог</a>
+            <a href="" class="breadcrumbs__item">Карточка товара</a>
+        </div>
+    </section>
+
+    <button class="button">
+        <span>Оставить заявку</span>
+    </button>
+
+    <a href="" class="link">
+        <span>Скачать каталог</span>
+        <svg width="11" height="14" viewBox="0 0 11 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11 7L0.5 13.0622L0.500001 0.937822L11 7Z" fill="#DE2C2C"/>
+        </svg>
+    </a>
+
+    <div class="slider-nav">
+        <div class="slider-nav__pagination desktop"></div>
+        <div class="slider-nav__arrows">
+            <button type="button" class="slider-nav__arrow prev">
+                <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 10H1.5M1.5 10L10.5 19M1.5 10L10.5 1" stroke="#959595"/>
+                </svg>
+            </button>
+            <div class="slider-nav__pagination mobile"></div>
+            <button type="button" class="slider-nav__arrow next">
+                <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 10H17.5M17.5 10L8.5 19M17.5 10L8.5 1" stroke="#DE2C2C"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="page-pagination">
+        <a href="" class="page-pagination__arrow prev">
+            <svg width="11" height="14" viewBox="0 0 11 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.0598e-07 7L10.5 0.937824L10.5 13.0622L3.0598e-07 7Z" fill="#959595"/>
+            </svg>
+            <span>Назад</span>
+        </a>
+        <div class="page-pagination__numbers">
+            <a href="" class="page-pagination__link">
+                <span>1</span>
+            </a>
+            <a href="" class="page-pagination__link">
+                <span>2</span>
+            </a>
+            <a href="" class="page-pagination__link active">
+                <span>3</span>
+            </a>
+            <a href="" class="page-pagination__link">
+                <span>4</span>
+            </a>
+            <a href="" class="page-pagination__link">
+                <span>5</span>
+            </a>
+        </div>
+        <a href="" class="page-pagination__arrow next">
+            <span>Вперед</span>
+            <svg width="11" height="14" viewBox="0 0 11 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 7L0.5 13.0622L0.500001 0.937822L11 7Z" fill="#959595"/>
+            </svg>
+        </a>
+    </div>
+</main>
+
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/swiper.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
