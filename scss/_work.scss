@@ -1,0 +1,269 @@
+.work {
+  &__title {
+    margin-bottom: 6rem;
+    font-family: $tablon;
+    font-weight: 500;
+    font-size: 6rem;
+    line-height: 7.8rem;
+    letter-spacing: .03em;
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+
+  &__item {
+    flex: 30%;
+    max-width: 50.8rem;
+    padding-top: 0.4rem;
+    border-radius: 2rem;
+    background-color: white;
+    box-shadow: 2px 1.3rem 2.6rem 0 #4242420D;
+  }
+
+  &__img-box {
+    width: 100%;
+    height: 42.1rem;
+    padding: 0 0.4rem;
+    border-radius: inherit;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      border-radius: inherit;
+      object-fit: cover;
+    }
+  }
+
+  &__item-content {
+    position: relative;
+    padding: 3.2rem 4rem;
+    margin-top: -2.4rem;
+    border-radius: inherit;
+    background-color: white;
+  }
+
+  &__item-title {
+    margin-bottom: 1.2rem;
+    font-family: $tablon;
+    font-weight: 500;
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+    letter-spacing: .03em;
+  }
+
+  &__item-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 3.2rem;
+  }
+
+  &__tag {
+    padding: 0.8rem 3rem;
+    border-radius: 0.5rem 3rem 3rem 0.5rem;
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: white;
+
+    &:nth-child(odd) {
+      background-color: $gray;
+    }
+
+    &:nth-child(even) {
+      background-color: $black;
+    }
+  }
+
+  &__list {
+    margin-bottom: 2.2rem;
+  }
+
+  &__list-item {
+    position: relative;
+    padding-left: 2.8rem;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: $gray-text;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 1rem;
+      width: 2rem;
+      height: 1px;
+      background-color: $gray-text;
+    }
+
+    > a {
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 1.6rem;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__price-box {
+    position: relative;
+    padding: 0.8rem 2.2rem;
+    background-color: #F3F3F3;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: $gray;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 2rem;
+      height: 2rem;
+      transform: translate(-50%, -50%);
+      border-radius: 100%;
+      background-color: white;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 50%;
+      width: 2rem;
+      height: 2rem;
+      transform: translate(50%, -50%);
+      border-radius: 100%;
+      background-color: white;
+    }
+  }
+
+  &__price {
+    margin: 0 0.6rem;
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+  }
+
+  &__currency {
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 48em) {
+  .work {
+    &__title {
+      margin-bottom: 8rem;
+      font-size: 5.2rem;
+      line-height: 6.8rem;
+    }
+
+    &__cards {
+      gap: 4rem;
+    }
+
+    &__item {
+      flex: 100%;
+      max-width: none;
+      padding-top: 0.8rem;
+      border-radius: 3rem;
+      box-shadow: 2px 2.6rem 5.2rem 0 #4242420D;
+    }
+
+    &__img-box {
+      width: 100%;
+      height: 49.6rem;
+      padding: 0 0.8rem;
+    }
+
+    &__item-content {
+      padding: 5.6rem 4rem;
+      margin-top: -4rem;
+    }
+
+    &__item-title {
+      margin-bottom: 2.4rem;
+      font-size: 5.2rem;
+      line-height: 6.8rem;
+    }
+
+    &__item-tags {
+      gap: 2.4rem;
+      margin-bottom: 4rem;
+    }
+
+    &__tag {
+      padding: 0.8rem 4rem;
+      border-radius: 1rem 6rem 6rem 1rem;
+      font-size: 2.6rem;
+    }
+
+    &__list {
+      margin-bottom: 4rem;
+    }
+
+    &__list-item {
+      padding-left: 5.2rem;
+      font-size: 3rem;
+      line-height: 4rem;
+
+      &:before {
+        top: 1.8rem;
+        width: 3.6rem;
+      }
+
+      &:not(:last-child) {
+      }
+    }
+
+    &__footer {
+      flex-direction: column;
+      align-items: normal;
+      justify-content: normal;
+      gap: 6.4rem;
+
+      .link {
+        order: 2;
+      }
+    }
+
+    &__price-box {
+      order: 1;
+      width: fit-content;
+      padding: 1.6rem 4rem;
+      font-size: 2.6rem;
+      line-height: 3.5rem;
+
+      &:before {
+        width: 3.2rem;
+        height: 3.2rem;
+      }
+
+      &:after {
+        width: 3.2rem;
+        height: 3.2rem;
+      }
+    }
+
+    &__price {
+      margin: 0 0 0 0.8rem;
+      font-size: 3.6rem;
+      line-height: 4.8rem;
+    }
+
+    &__currency {
+    }
+  }
+}

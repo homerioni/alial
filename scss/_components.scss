@@ -64,6 +64,7 @@
   font-size: 1.8rem;
   line-height: 2.4rem;
   color: $red;
+  text-transform: uppercase;
 
   > svg {
     flex: none;
@@ -74,6 +75,10 @@
 
     path {
       fill: $red;
+    }
+
+    + svg {
+      margin-left: 2px;
     }
   }
 
