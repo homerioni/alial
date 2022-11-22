@@ -2571,6 +2571,109 @@ body {
     background-color: #DE2C2C;
   }
 }
+.partners__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.partners__title-box {
+  width: 51rem;
+}
+.partners__title-box .slider-nav {
+  margin-left: 0;
+}
+.partners__title {
+  margin-bottom: 4.6rem;
+  font-family: "Tablo'n";
+  font-weight: 500;
+  font-size: 6rem;
+  line-height: 7.8rem;
+  letter-spacing: 0.03em;
+}
+.partners__slider {
+  width: 104rem;
+  margin-right: 0;
+}
+.partners__slide-img-box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 23.7rem;
+  height: 23.7rem;
+  margin-bottom: 2.4rem;
+  border-radius: 100%;
+  border: 3px solid #151313;
+}
+.partners__slide-img-box:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 19.7rem;
+  height: 19.7rem;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 100%;
+  border: 1px solid #151313;
+}
+.partners__slide-img-box > img {
+  width: 15rem;
+  height: 15rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.partners__slide-name {
+  font-family: "Tablo'n";
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 3.1rem;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+@media (max-width: 48em) {
+  .partners__container {
+    display: block;
+  }
+  .partners__title-box {
+    width: 100%;
+    margin-bottom: 8rem;
+  }
+  .partners__title {
+    margin-bottom: 0;
+    font-size: 5.2rem;
+    line-height: 6.8rem;
+  }
+  .partners__slider {
+    width: calc(100% + 8rem);
+    margin: 0 -4rem;
+    padding: 0 4rem;
+  }
+  .partners__slide-img-box {
+    width: 44.8rem;
+    height: 44.8rem;
+    margin-bottom: 0;
+    border: 2px solid #151313;
+  }
+  .partners__slide-img-box:before {
+    width: 37.2rem;
+    height: 37.2rem;
+  }
+  .partners__slide-img-box > img {
+    width: 24.8rem;
+    height: 24.8rem;
+  }
+}
 body.lock {
   overflow: hidden;
 }

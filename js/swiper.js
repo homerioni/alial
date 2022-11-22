@@ -136,3 +136,28 @@ const services_slider = new Swiper('.services__slider', {
 $('.services__tab').click(function () {
     services_slider.slideTo($(this).index() + 1);
 });
+
+const partners_slider = new Swiper('.partners__slider', {
+    direction: 'horizontal',
+    loop: true,
+
+    breakpoints: {
+        0: {
+            slidesPerView: 1.454,
+            spaceBetween: rem(2),
+        },
+        769: {
+            slidesPerView: 4,
+            spaceBetween: rem(3),
+        },
+    },
+
+    navigation: {
+        nextEl: '.partners .next',
+        prevEl: '.partners .prev',
+    },
+
+    autoplay: {
+        delay: 12000,
+    },
+});
