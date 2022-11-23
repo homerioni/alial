@@ -161,3 +161,27 @@ const partners_slider = new Swiper('.partners__slider', {
         delay: 12000,
     },
 });
+
+const realized_slider = new Swiper('.realized-slider__slider', {
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 1,
+    speed: 500,
+    effect: 'creative',
+
+    creativeEffect: {
+        prev: {
+            opacity: 0,
+            translate: [rem(4), 0, 0],
+        },
+        next: {
+            opacity: 0,
+            translate: [rem(4), 0, 0],
+        },
+    },
+
+    navigation: {
+        nextEl: '.realized-slider .next',
+        prevEl: '.realized-slider .prev',
+    },
+});

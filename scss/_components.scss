@@ -146,11 +146,15 @@
       }
     }
 
-    .swiper-button-disabled {
+    &.swiper-button-disabled {
       > svg {
         path {
           stroke: $gray;
         }
+      }
+
+      &:hover {
+        box-shadow: none;
       }
     }
 

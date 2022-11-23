@@ -1,4 +1,6 @@
 .services {
+  overflow: hidden;
+
   &__title {
     width: 70rem;
     margin-bottom: 6rem;
@@ -175,6 +177,10 @@
       &:after {
         transform: translate(-100%, -50%);
       }
+    }
+
+    &:hover {
+      font-weight: 600;
     }
   }
 
