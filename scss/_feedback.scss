@@ -1,0 +1,137 @@
+.feedback {
+  &__form {
+    position: relative;
+    padding: 6rem 0;
+    text-align: center;
+  }
+
+  &__bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -10;
+    width: 100%;
+    height: 100%;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__title {
+    margin-bottom: 2.8rem;
+    font-family: $tablon;
+    font-weight: 500;
+    font-size: 4rem;
+    line-height: 5.2rem;
+    letter-spacing: .03em;
+  }
+
+  &__desc {
+    width: 76rem;
+    margin: 0 auto 4rem auto;
+    font-size: 2rem;
+    line-height: 2.7rem;
+  }
+
+  &__input-box {
+    display: flex;
+    width: fit-content;
+    margin: 0 auto 1.2rem auto;
+  }
+
+  &__label {
+    display: block;
+    width: 88rem;
+    height: auto;
+    border-radius: 0.5rem;
+    background-color: white;
+    box-shadow: 2px 1.3rem 2.6rem 0 #4242420D;
+
+    > input {
+      width: 100%;
+      height: 100%;
+      padding: 0 20rem 0 2rem;
+      font-size: 2rem;
+      line-height: 2.7rem;
+    }
+  }
+
+  &__btn {
+    z-index: 1;
+    margin-left: -18.4rem;
+  }
+
+  &__text {
+    width: 91.5rem;
+    margin: 0 auto;
+    font-size: 2rem;
+    line-height: 2.7rem;
+    text-align: left;
+    color: $gray-text;
+
+    > a {
+      color: $red;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .feedback {
+    &__form {
+      margin: 0 -4rem;
+      padding: 5.6rem 4rem;
+    }
+
+    &__bg {
+    }
+
+    &__title {
+      margin-bottom: 4rem;
+      font-size: 5.2rem;
+      line-height: 6.8rem;
+    }
+
+    &__desc {
+      width: 100%;
+      margin-bottom: 6.4rem;
+      font-size: 3rem;
+      line-height: 4rem;
+    }
+
+    &__input-box {
+      display: flex;
+      width: fit-content;
+      margin: 0 auto 1.2rem auto;
+    }
+
+    &__label {
+      width: 60rem;
+      border-radius: 1rem;
+      box-shadow: 2px 2.6rem 5.2rem 0 #4242420D;
+
+      > input {
+        padding: 0 23rem 0 3rem;
+        font-size: 3rem;
+        line-height: 4rem;
+      }
+    }
+
+    &__btn {
+      margin-left: -22rem;
+    }
+
+    &__text {
+      width: 100%;
+      font-size: 3rem;
+      line-height: 4rem;
+      text-align: center;
+    }
+  }
+}
