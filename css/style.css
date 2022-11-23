@@ -3521,6 +3521,128 @@ body {
     width: 100%;
   }
 }
+.licenses__title-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10rem;
+}
+.licenses__title {
+  margin-right: 2rem;
+  font-family: "Tablo'n";
+  font-weight: 500;
+  font-size: 6rem;
+  line-height: 7.8rem;
+  letter-spacing: 0.03em;
+}
+.licenses__title .slider-nav {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+}
+.licenses__slide {
+  padding: 2rem 2rem 4rem 2rem;
+  border-radius: 2rem;
+  background-color: white;
+}
+.licenses__img-box {
+  position: relative;
+  width: 100%;
+  height: 32.3rem;
+  padding: 2.8rem;
+  margin-bottom: 2.8rem;
+  border-radius: inherit;
+  background-color: #F3F3F3;
+}
+.licenses__img-box > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.licenses__zoom-icon {
+  position: absolute;
+  right: 2.8rem;
+  bottom: 2.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 6rem;
+  height: 6rem;
+  border-radius: inherit;
+  background-color: #DE2C2C;
+}
+.licenses__zoom-icon > img {
+  width: 2.4rem;
+  height: 2.4rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.licenses__name {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.7rem;
+  text-align: center;
+}
+.licenses__id {
+  font-size: 2rem;
+  line-height: 2.7rem;
+  text-align: center;
+}
+
+@media (max-width: 48em) {
+  .licenses__title-box {
+    margin-bottom: 8rem;
+  }
+  .licenses__title {
+    margin-right: 0;
+    font-size: 5.2rem;
+    line-height: 6.8rem;
+  }
+  .licenses__slider {
+    margin: 0 -4rem 6.4rem -4rem;
+    padding: 0 4rem;
+  }
+  .licenses__slide {
+    padding: 3.6rem 3.6rem 5.6rem 3.6rem;
+    border-radius: 3rem;
+  }
+  .licenses__img-box {
+    height: 58rem;
+    padding: 2.8rem;
+    margin-bottom: 4rem;
+  }
+  .licenses__zoom-icon {
+    right: 2.8rem;
+    bottom: 2.8rem;
+    width: 9.6rem;
+    height: 9.6rem;
+  }
+  .licenses__zoom-icon > img {
+    width: 3.8rem;
+    height: 3.8rem;
+  }
+  .licenses__name {
+    font-size: 3.6rem;
+    line-height: 4.8rem;
+  }
+  .licenses__id {
+    font-size: 3.6rem;
+    line-height: 4.8rem;
+  }
+}
 body.lock {
   overflow: hidden;
 }

@@ -1,0 +1,130 @@
+.licenses {
+  &__title-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10rem;
+  }
+
+  &__title {
+    margin-right: 2rem;
+    font-family: $tablon;
+    font-weight: 500;
+    font-size: 6rem;
+    line-height: 7.8rem;
+    letter-spacing: .03em;
+
+    .slider-nav {
+      flex: none;
+    }
+  }
+
+  &__slider {
+  }
+
+  &__slide {
+    padding: 2rem 2rem 4rem 2rem;
+    border-radius: 2rem;
+    background-color: white;
+  }
+
+  &__img-box {
+    position: relative;
+    width: 100%;
+    height: 32.3rem;
+    padding: 2.8rem;
+    margin-bottom: 2.8rem;
+    border-radius: inherit;
+    background-color: #F3F3F3;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__zoom-icon {
+    position: absolute;
+    right: 2.8rem;
+    bottom: 2.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6rem;
+    height: 6rem;
+    border-radius: inherit;
+    background-color: $red;
+
+    > img {
+      width: 2.4rem;
+      height: 2.4rem;
+      object-fit: contain;
+    }
+  }
+
+  &__name {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.7rem;
+    text-align: center;
+  }
+
+  &__id {
+    font-size: 2rem;
+    line-height: 2.7rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 48em) {
+  .licenses {
+    &__title-box {
+      margin-bottom: 8rem;
+    }
+
+    &__title {
+      margin-right: 0;
+      font-size: 5.2rem;
+      line-height: 6.8rem;
+    }
+
+    &__slider {
+      margin: 0 -4rem 6.4rem -4rem;
+      padding: 0 4rem;
+    }
+
+    &__slide {
+      padding: 3.6rem 3.6rem 5.6rem 3.6rem;
+      border-radius: 3rem;
+    }
+
+    &__img-box {
+      height: 58rem;
+      padding: 2.8rem;
+      margin-bottom: 4rem;
+    }
+
+    &__zoom-icon {
+      right: 2.8rem;
+      bottom: 2.8rem;
+      width: 9.6rem;
+      height: 9.6rem;
+
+      > img {
+        width: 3.8rem;
+        height: 3.8rem;
+      }
+    }
+
+    &__name {
+      font-size: 3.6rem;
+      line-height: 4.8rem;
+    }
+
+    &__id {
+      font-size: 3.6rem;
+      line-height: 4.8rem;
+    }
+  }
+}

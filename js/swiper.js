@@ -185,3 +185,22 @@ const realized_slider = new Swiper('.realized-slider__slider', {
         prevEl: '.realized-slider .prev',
     },
 });
+
+const licenses_slider = new Swiper('.licenses__slider', {
+    direction: 'horizontal',
+    spaceBetween: rem(3),
+
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        769: {
+            slidesPerView: 4,
+        },
+    },
+
+    navigation: {
+        nextEl: '.licenses .next',
+        prevEl: '.licenses .prev',
+    },
+});
