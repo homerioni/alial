@@ -205,12 +205,29 @@ const licenses_slider = new Swiper('.licenses__slider', {
     },
 });
 
+$('.modal-licenses').iziModal({
+    overlayColor: 'rgba(0, 3, 21, 0.5)',
+    width: '100%',
+    zindex: 30,
+    transitionIn: 'fadeInUp',
+    transitionOut: 'comingOut',
+    navigateArrows: false,
+    navigateCaption: false,
+    onOpening: function() {
+        $('body').width($('body').width()).addClass('lock');
+    },
+    onClosing: function() {
+        $('body').width('').removeClass('lock');
+    },
+});
+
 const modal_licenses_slider = new Swiper('.modal-licenses__slider', {
     direction: 'horizontal',
     spaceBetween: rem(4),
     centeredSlides: true,
     loop: true,
-    speed: 500,
+    grabCursor: true,
+    speed: 700,
     effect: 'creative',
 
     creativeEffect: {

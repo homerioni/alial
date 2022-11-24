@@ -126,12 +126,11 @@ $(document).ready(function () {
     // Modal
     // Licenses
     $('.popup-licenses').click(function () {
-        $('body').width($('body').width()).addClass('lock');
-        $('.modal-licenses').css('display', 'flex').hide().fadeIn().css('transform', 'scale(1)');
+        $('.modal-licenses').iziModal('open');
     });
-    $('.modal-licenses .close').click(function () {
-        $('body').width('').removeClass('lock');
-        $(this).parents('.modal-licenses').fadeOut().css('transform', 'scale(1)')
+    $('.licenses__slide').click(function () {
+        modal_licenses_slider.slideToLoop($(this).index());
+        $('.modal-licenses').iziModal('open');
     });
 
 });
