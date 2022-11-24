@@ -264,3 +264,52 @@ const modal_licenses_slider = new Swiper('.modal-licenses__slider', {
         prevEl: '.modal-licenses .prev',
     },
 });
+
+const catalog_intro_slider = new Swiper('.catalog-intro__slider', {
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 1,
+    speed: 700,
+    effect: 'creative',
+
+    creativeEffect: {
+        prev: {
+            opacity: 0,
+            translate: [rem(4), 0, 0],
+        },
+        next: {
+            opacity: 0,
+            translate: [rem(4), 0, 0],
+        },
+    },
+
+    breakpoints: {
+        0: {
+            pagination: {
+                el: ".catalog-intro .slider-nav__pagination.mobile",
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return '<span class="page-pagination__link ' + className + '"></span>';
+                },
+            },
+        },
+        769: {
+            pagination: {
+                el: ".catalog-intro .slider-nav__pagination.desktop",
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return '<span class="page-pagination__link ' + className + '"></span>';
+                },
+            },
+        },
+    },
+
+    navigation: {
+        nextEl: '.catalog-intro .next',
+        prevEl: '.catalog-intro .prev',
+    },
+
+    autoplay: {
+        delay: 15000,
+    },
+});
