@@ -204,3 +204,46 @@ const licenses_slider = new Swiper('.licenses__slider', {
         prevEl: '.licenses .prev',
     },
 });
+
+const modal_licenses_slider = new Swiper('.modal-licenses__slider', {
+    direction: 'horizontal',
+    spaceBetween: rem(4),
+    centeredSlides: true,
+    loop: true,
+    speed: 500,
+    effect: 'creative',
+
+    creativeEffect: {
+        limitProgress: 3,
+        prev: {
+            translate: ['-100%', 0, 0],
+            scale: 0.85,
+        },
+        next: {
+            translate: ['100%', 0, 0],
+            scale: 0.85,
+        },
+    },
+
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        769: {
+            slidesPerView: 2.6,
+        },
+    },
+
+    pagination: {
+        el: ".modal-licenses .page-pagination__numbers",
+        clickable: true,
+        renderBullet: function (index, className) {
+            return '<span class="page-pagination__link ' + className + '"><span>'+ (index + 1) +'</span></span>';
+        },
+    },
+
+    navigation: {
+        nextEl: '.modal-licenses .next',
+        prevEl: '.modal-licenses .prev',
+    },
+});

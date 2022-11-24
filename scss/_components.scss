@@ -275,6 +275,10 @@
       transform: skewX(30deg);
     }
 
+    &:hover {
+      background-color: #DDD;
+    }
+
     &.active {
       border-left: none;
       background-color: $red;
@@ -287,14 +291,6 @@
       & + .page-pagination__link {
         border-left: none;
       }
-
-      &:hover {
-        background-color: $red;
-      }
-    }
-
-    &:hover {
-      background-color: #DDD;
     }
   }
 }
@@ -469,15 +465,32 @@
 
     &__numbers {
       flex: 100%;
-      justify-content: center;
+      justify-content: normal;
+      overflow: auto;
+      margin: 0 -4rem;
+      padding: 0 4rem;
+
+      &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+      }
     }
 
     &__link {
+      flex: none;
       width: 12rem;
       height: 7.2rem;
       font-size: 2.6rem;
 
       &.active {
+      }
+
+      &:first-child {
+        margin-left: auto;
+      }
+
+      &:last-child {
+        margin-right: auto;
       }
     }
   }

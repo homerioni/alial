@@ -87,7 +87,6 @@ $(document).ready(function () {
         overlayColor: 'rgba(0, 3, 21, 0.5)',
         width: '108rem',
         zindex: 30,
-        group: 'work1',
         transitionIn: 'fadeInUp',
         transitionOut: 'comingOut',
         navigateArrows: false,
@@ -109,7 +108,6 @@ $(document).ready(function () {
         overlayColor: 'rgba(0, 3, 21, 0.5)',
         width: '108rem',
         zindex: 30,
-        group: 'work2',
         transitionIn: 'fadeInUp',
         transitionOut: 'comingOut',
         navigateArrows: false,
@@ -123,6 +121,17 @@ $(document).ready(function () {
     });
     $('.popup-work2').click(function () {
         $('.modal-work2').iziModal('open');
+    });
+
+    // Modal
+    // Licenses
+    $('.popup-licenses').click(function () {
+        $('body').width($('body').width()).addClass('lock');
+        $('.modal-licenses').css('display', 'flex').hide().fadeIn().css('transform', 'scale(1)');
+    });
+    $('.modal-licenses .close').click(function () {
+        $('body').width('').removeClass('lock');
+        $(this).parents('.modal-licenses').fadeOut().css('transform', 'scale(1)')
     });
 
 });
