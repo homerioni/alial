@@ -36,6 +36,7 @@ $(document).ready(function () {
     });
 
     // Modal
+    // Request
     $('.modal-request__form').iziModal({
         overlayColor: 'rgba(0, 3, 21, 0.5)',
         width: '108rem',
@@ -68,16 +69,60 @@ $(document).ready(function () {
             $('body').width('').removeClass('lock');
         },
     });
-    $('.modal-request__form-footer .button').click(function () {
-        $('.modal-request__form').iziModal('next');
-    });
     $('.popup-request').click(function () {
         $('.modal-request__form').iziModal('open');
+    });
+    $('.popup-request-complete').click(function () {
+        $('.modal-request__complete').iziModal('open');
     });
     $('.modal-request__label input, .modal-request__label-textarea textarea').focusin(function () {
         $(this).parent().addClass('focus');
     }).focusout(function () {
         $(this).parent().removeClass('focus');
+    });
+
+    // Modal
+    // Work1
+    $('.modal-work1').iziModal({
+        overlayColor: 'rgba(0, 3, 21, 0.5)',
+        width: '108rem',
+        zindex: 30,
+        group: 'work1',
+        transitionIn: 'fadeInUp',
+        transitionOut: 'comingOut',
+        navigateArrows: false,
+        navigateCaption: false,
+        onOpening: function() {
+            $('body').width($('body').width()).addClass('lock');
+        },
+        onClosing: function() {
+            $('body').width('').removeClass('lock');
+        },
+    });
+    $('.popup-work1').click(function () {
+        $('.modal-work1').iziModal('open');
+    });
+
+    // Modal
+    // Work2
+    $('.modal-work2').iziModal({
+        overlayColor: 'rgba(0, 3, 21, 0.5)',
+        width: '108rem',
+        zindex: 30,
+        group: 'work2',
+        transitionIn: 'fadeInUp',
+        transitionOut: 'comingOut',
+        navigateArrows: false,
+        navigateCaption: false,
+        onOpening: function() {
+            $('body').width($('body').width()).addClass('lock');
+        },
+        onClosing: function() {
+            $('body').width('').removeClass('lock');
+        },
+    });
+    $('.popup-work2').click(function () {
+        $('.modal-work2').iziModal('open');
     });
 
 });
