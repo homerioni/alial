@@ -15,11 +15,12 @@
 @import "feedback";
 @import "article-item";
 @import "licenses";
+@import "modal";
 
 
 
 body.lock {
-  overflow: hidden;
+  overflow: hidden !important;
 }
 
 @media (min-width: 48.01em) {

@@ -147,19 +147,9 @@ body {
   &__container-bottom {
     position: relative;
     display: flex;
-    padding: 1.2rem 0;
+    padding: 1.2rem 16.9rem;
     background-color: $gray;
     font-size: 2rem;
-
-    &:before {
-      content: '';
-      position: absolute;
-      left: -16.9rem;
-      bottom: 0;
-      width: 100vw;
-      height: 100%;
-      background-color: $gray;
-    }
 
     > * {
       position: relative;

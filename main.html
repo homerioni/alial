@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="font/stylesheet.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/iziModal.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -143,7 +144,7 @@
             <a href="" class="header__phone">8 800 600 28 20</a>
             <p class="header__phone-text">Ежедневно 9:00-21:00</p>
         </div>
-        <button type="button" class="header__request-link link desktop">
+        <button type="button" class="header__request-link link popup-request desktop">
             <span>Заявка</span>
             <svg width="11" height="14" viewBox="0 0 11 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M11 7L0.5 13.0622L0.500001 0.937822L11 7Z" fill="#DE2C2C"/>
@@ -152,7 +153,7 @@
                 <path d="M11 7L0.5 13.0622L0.500001 0.937822L11 7Z" fill="#DE2C2C"/>
             </svg>
         </button>
-        <button type="button" class="header__request-link button mobile">
+        <button type="button" class="header__request-link button popup-request mobile">
             <span>Оставить заявку</span>
         </button>
     </nav>
@@ -1470,15 +1471,61 @@
             </div>
         </div>
     </div>
-    <div class="container footer__container-bottom">
+    <div class="footer__container-bottom">
         <p>Copiright © 2022 М.О. «Алиал-Тех»</p>
         <a href="">info@alialmash.ru</a>
     </div>
 </footer>
 
 
+<section class="modal-request">
+    <form class="modal modal-request__form">
+        <div class="modal-request__content">
+            <button type="button" class="modal-request__close" data-izimodal-close></button>
+            <h2 class="modal-request__title">Оставьте заявку</h2>
+            <div class="modal-request__form-content">
+                <label class="modal-request__label">
+                    <input placeholder="Имя" type="text">
+                </label>
+                <label class="modal-request__label">
+                    <input placeholder="Фамилия" type="text">
+                </label>
+                <label class="modal-request__label">
+                    <input placeholder="Номер телефона" type="tel">
+                </label>
+                <label class="modal-request__label">
+                    <input placeholder="Электронная почта" type="email">
+                </label>
+                <label class="modal-request__label-textarea">
+                    <textarea placeholder="Ваш комментарий"></textarea>
+                </label>
+                <div class="modal-request__form-footer">
+                    <button type="button" class="button">
+                        <span>Оставить заявку</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="modal modal-request__complete">
+        <div class="modal-request__content">
+            <button type="button" class="modal-request__close" data-izimodal-close></button>
+            <h2 class="modal-request__complete-title">Заявка отправлена</h2>
+            <p class="modal-request__complete-text">
+                Ваша заявка принята в обработку.
+                <br>Мы свяжемся с вами в ближайшее время.
+            </p>
+            <button type="button" class="modal-request__complete-btn button" data-izimodal-close>
+                <span>Готово</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/swiper-bundle.min.js"></script>
+<script src="js/iziModal.min.js"></script>
 <script src="js/swiper.js"></script>
 <script src="js/main.js"></script>
 </body>
