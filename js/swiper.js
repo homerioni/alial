@@ -443,3 +443,25 @@ const work_intro_slider = new Swiper('.work-intro__slider', {
         prevEl: '.work-intro .prev',
     },
 });
+
+const stages_slider = new Swiper('.stages__slider', {
+    direction: 'horizontal',
+    speed: 600,
+    grabCursor: true,
+
+    breakpoints: {
+        0: {
+            slidesPerView: 1.2,
+            spaceBetween: rem(2),
+        },
+        769: {
+            slidesPerView: 4,
+            spaceBetween: rem(3),
+        },
+    },
+
+    navigation: {
+        nextEl: '.stages .next',
+        prevEl: '.stages .prev',
+    },
+});
