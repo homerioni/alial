@@ -44,6 +44,13 @@ $(document).ready(function () {
         $(this).parent().addClass('active');
     });
 
+    // Contacts
+    $('.contacts__label input, .contacts__label-textarea textarea').focusin(function () {
+        $(this).parent().addClass('focus');
+    }).focusout(function () {
+        $(this).parent().removeClass('focus');
+    });
+
     // Modal
     // Request
     $('.modal-request__form').iziModal({
