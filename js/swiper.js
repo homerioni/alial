@@ -373,3 +373,38 @@ const modal_realized_slider = new Swiper('.modal-realized__slider', {
         prevEl: '.modal-realized .prev',
     },
 });
+
+const about_intro_slider = new Swiper('.about-intro__slider', {
+    direction: 'horizontal',
+    spaceBetween: rem(3),
+    loop: true,
+    speed: 700,
+
+    breakpoints: {
+        0: {
+            slidesPerView: 1.5,
+            spaceBetween: rem(2),
+
+            pagination: {
+                el: ".about-intro .slider-nav__pagination.mobile",
+                type: 'bullets',
+                clickable: true,
+            },
+        },
+        769: {
+            slidesPerView: 3,
+            spaceBetween: rem(3),
+
+            pagination: {
+                el: ".about-intro .slider-nav__pagination.desktop",
+                type: 'bullets',
+                clickable: true,
+            },
+        },
+    },
+
+    navigation: {
+        nextEl: '.about-intro .next',
+        prevEl: '.about-intro .prev',
+    },
+});
