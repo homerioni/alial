@@ -35,6 +35,15 @@ $(document).ready(function () {
         $('.header__content').addClass('active');
     });
 
+    // Catalog
+    $('.catalog__filter-label input').change(function () {
+        $(this).parent().toggleClass('active');
+    });
+    $('.catalog__tab input').change(function () {
+        $(this).parent().siblings('.catalog__tab').removeClass('active');
+        $(this).parent().addClass('active');
+    });
+
     // Modal
     // Request
     $('.modal-request__form').iziModal({
