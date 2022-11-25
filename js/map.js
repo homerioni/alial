@@ -20,10 +20,10 @@ ymaps.ready(function () {
             // Своё изображение иконки метки.
             iconImageHref: 'img/map-icon.svg',
             // Размеры метки.
-            iconImageSize: [55, 75],
+            iconImageSize: [rem(5.5), rem(7.5)],
             // Смещение левого верхнего угла иконки относительно
             // её "ножки" (точки привязки).
-            iconImageOffset: [-28, -68]
+            iconImageOffset: [rem(-2.8), rem(-6.8)]
         });
 
     myMap.geoObjects.add(myPlacemark);
