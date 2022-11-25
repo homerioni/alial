@@ -408,3 +408,38 @@ const about_intro_slider = new Swiper('.about-intro__slider', {
         prevEl: '.about-intro .prev',
     },
 });
+
+const work_intro_slider = new Swiper('.work-intro__slider', {
+    direction: 'horizontal',
+    spaceBetween: rem(3),
+    loop: true,
+    speed: 700,
+
+    breakpoints: {
+        0: {
+            slidesPerView: 1.2,
+            spaceBetween: rem(2),
+
+            pagination: {
+                el: ".work-intro .slider-nav__pagination.mobile",
+                type: 'bullets',
+                clickable: true,
+            },
+        },
+        769: {
+            slidesPerView: 2.41,
+            spaceBetween: rem(3),
+
+            pagination: {
+                el: ".work-intro .slider-nav__pagination.desktop",
+                type: 'bullets',
+                clickable: true,
+            },
+        },
+    },
+
+    navigation: {
+        nextEl: '.work-intro .next',
+        prevEl: '.work-intro .prev',
+    },
+});
