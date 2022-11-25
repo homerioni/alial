@@ -149,4 +149,14 @@ $(document).ready(function () {
         $('.modal-licenses').iziModal('open');
     });
 
+    // Modal
+    // Realized
+    $('.popup-realized').click(function () {
+        $('.modal-realized').iziModal('open');
+    });
+    $('.realized__img-box').click(function () {
+        modal_realized_slider.slideToLoop($(this).index());
+        $('.modal-realized').iziModal('open');
+    });
+
 });

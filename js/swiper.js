@@ -313,3 +313,63 @@ const catalog_intro_slider = new Swiper('.catalog-intro__slider', {
         delay: 15000,
     },
 });
+
+$('.modal-realized').iziModal({
+    overlayColor: 'rgba(0, 3, 21, 0.5)',
+    width: '100%',
+    zindex: 30,
+    transitionIn: 'fadeInUp',
+    transitionOut: 'comingOut',
+    navigateArrows: false,
+    navigateCaption: false,
+    onOpening: function() {
+        $('body').width($('body').width()).addClass('lock');
+    },
+    onClosing: function() {
+        $('body').width('').removeClass('lock');
+    },
+});
+
+const modal_realized_slider = new Swiper('.modal-realized__slider', {
+    direction: 'horizontal',
+    spaceBetween: rem(4),
+    centeredSlides: true,
+    loop: true,
+    grabCursor: true,
+    speed: 700,
+    effect: 'creative',
+
+    creativeEffect: {
+        limitProgress: 3,
+        prev: {
+            translate: ['-100%', 0, 0],
+            scale: 0.85,
+        },
+        next: {
+            translate: ['100%', 0, 0],
+            scale: 0.85,
+        },
+    },
+
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        769: {
+            slidesPerView: 'auto',
+        },
+    },
+
+    pagination: {
+        el: ".modal-realized .page-pagination__numbers",
+        clickable: true,
+        renderBullet: function (index, className) {
+            return '<span class="page-pagination__link ' + className + '"><span>'+ (index + 1) +'</span></span>';
+        },
+    },
+
+    navigation: {
+        nextEl: '.modal-realized .next',
+        prevEl: '.modal-realized .prev',
+    },
+});
