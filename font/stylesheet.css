@@ -1,4 +1,13 @@
 @font-face {
+    font-family: 'Circe';
+    src: url('Circe-Regular.ttf');
+    src: local('Circe Regular'), local('Circe-Regular'),
+    url('Circe-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Gilroy';
     src: url('Gilroy-Regular.eot');
     src: local('Gilroy Regular'), local('Gilroy-Regular'),

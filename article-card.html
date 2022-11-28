@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <meta name="description" content="another website" />
+    <title>Страница</title>
+
+    <link rel="stylesheet" href="font/stylesheet.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/iziModal.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header class="header">
+    <div class="container header__container-mob mobile">
+        <button type="button" class="header__burger">
+            <span></span>
+        </button>
+        <a href="/" class="header__logo">
+            <img src="img/logo.svg" alt="" />
+        </a>
+        <a href="" class="header__phone-mob">
+            <img src="img/header-phone-mob.svg" alt="" />
+        </a>
+    </div>
+    <nav class="container header__content">
+        <a href="/" class="header__logo">
+            <img src="img/logo.svg" alt="" />
+        </a>
+        <div class="header__language-box">
+            <button type="button" class="header__language-btn">
+                <svg
+                        class="header__language-icon"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 30 30"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                            d="M15 26.25C21.2132 26.25 26.25 21.2132 26.25 15C26.25 8.7868 21.2132 3.75 15 3.75C8.7868 3.75 3.75 8.7868 3.75 15C3.75 21.2132 8.7868 26.25 15 26.25Z"
+                            stroke="#959595"
+                            stroke-width="1.5"
+                            stroke-miterlimit="10"
+                    />
+                    <path
+                            d="M4.39453 11.25H25.6055"
+                            stroke="#959595"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                    />
+                    <path
+                            d="M4.39453 18.75H25.6055"
+                            stroke="#959595"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                    />
+                    <path
+                            d="M15 25.9453C17.5888 25.9453 19.6875 21.0449 19.6875 15C19.6875 8.95507 17.5888 4.05469 15 4.05469C12.4112 4.05469 10.3125 8.95507 10.3125 15C10.3125 21.0449 12.4112 25.9453 15 25.9453Z"
+                            stroke="#959595"
+                            stroke-width="1.5"
+                            stroke-miterlimit="10"
+                    />
+                </svg>
+                <span>RU</span>
+                <svg
+                        class="header__language-arrow"
+                        width="10"
+                        height="6"
+                        viewBox="0 0 10 6"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                            d="M5 6L0.669873 -8.15666e-07L9.33013 -5.85621e-08L5 6Z"
+                            fill="black"
+                    />
+                </svg>
+            </button>
+            <ul class="header__language-list">
+                <li class="header__language-link active">
+                    <a>Ru</a>
+                </li>
+                <li class="header__language-link">
+                    <a href="">En</a>
+                </li>
+            </ul>
+        </div>
+        <ul class="header__menu">
+            <li class="header__menu-item">
+                <a href="">Главная</a>
+                <svg
+                        width="12"
+                        height="9"
+                        viewBox="0 0 12 9"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                            d="M6 9L0.803849 -9.78799e-07L11.1962 -7.02746e-08L6 9Z"
+                            fill="#151313"
+                    />
+                </svg>
+                <ul class="header__list">
+                    <li class="header__list-item">
+                        <a href="">О нас</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="">Новости</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="">Реализованные проекты</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="">Каталог</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="header__menu-item">
+                <a href="">Гидроизоляция</a>
+                <svg
+                        width="12"
+                        height="9"
+                        viewBox="0 0 12 9"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                            d="M6 9L0.803849 -9.78799e-07L11.1962 -7.02746e-08L6 9Z"
+                            fill="#151313"
+                    />
+                </svg>
+                <ul class="header__list">
+                    <li class="header__list-item">
+                        <a href="">О нас</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="">Новости</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="">Реализованные проекты</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="">Каталог</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="header__menu-item">
+                <a href="">Огнезащита</a>
+                <svg
+                        width="12"
+                        height="9"
+                        viewBox="0 0 12 9"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                            d="M6 9L0.803849 -9.78799e-07L11.1962 -7.02746e-08L6 9Z"
+                            fill="#151313"
+                    />
+                </svg>
+                <ul class="header__list">
+                    <li class="header__list-item">
+                        <a href="">О нас</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="">Новости</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="">Реализованные проекты</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="">Каталог</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="header__menu-item">
+                <a href="">Антикоррозия</a>
+                <svg
+                        width="12"
+                        height="9"
+                        viewBox="0 0 12 9"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                            d="M6 9L0.803849 -9.78799e-07L11.1962 -7.02746e-08L6 9Z"
+                            fill="#151313"
+                    />
+                </svg>
+                <ul class="header__list">
+                    <li class="header__list-item">
+                        <a href="">О нас</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="">Новости</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="">Реализованные проекты</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="">Каталог</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="header__menu-item">
+                <a href="">Статьи</a>
+            </li>
+            <li class="header__menu-item">
+                <a href="">Контакты</a>
+            </li>
+        </ul>
+        <div class="header__phone-box">
+            <a href="" class="header__phone">8 800 600 28 20</a>
+            <p class="header__phone-text">Ежедневно 9:00-21:00</p>
+        </div>
+        <button
+                type="button"
+                class="header__request-link link popup-request desktop"
+        >
+            <span>Заявка</span>
+            <svg
+                    width="11"
+                    height="14"
+                    viewBox="0 0 11 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                        d="M11 7L0.5 13.0622L0.500001 0.937822L11 7Z"
+                        fill="#DE2C2C"
+                />
+            </svg>
+            <svg
+                    width="11"
+                    height="14"
+                    viewBox="0 0 11 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                        d="M11 7L0.5 13.0622L0.500001 0.937822L11 7Z"
+                        fill="#DE2C2C"
+                />
+            </svg>
+        </button>
+        <button
+                type="button"
+                class="header__request-link button popup-request mobile"
+        >
+            <span>Оставить заявку</span>
+        </button>
+    </nav>
+    <div class="header__burger-bg">
+        <button type="button" class="header__close-btn"></button>
+    </div>
+</header>
+
+<main>
+    <section class="breadcrumbs">
+        <div class="container breadcrumbs__container">
+            <a href="" class="breadcrumbs__item">Главная</a>
+            <a href="" class="breadcrumbs__item">Статьи</a>
+            <a href="" class="breadcrumbs__item"
+            >Огнезащита текстильных материалов</a
+            >
+        </div>
+    </section>
+
+    <section class="article-hero">
+        <div class="container">
+            <div class="article-hero__content">
+                <div class="article-hero__info">
+                    <div class="article-hero__date">25/09/22</div>
+                    <div class="article-hero__title">
+                        Огнезащита текстильных материалов
+                    </div>
+                    <div class="article-hero__text">
+                        Ut phasellus in fames tellus. Malesuada in sed id facilisis nunc
+                        pretium velit. Tortor fringilla pellentesque odio erat non
+                        auctor. Ipsum egestas libero faucibus pellentesque sagittis
+                        imperdiet. Sed proin cursus erat sed nullam. At sed elementum
+                        egestas aliquet nullam viverra lectus tincidunt. Cras euismod et
+                        ullamcorper tortor diam.
+                    </div>
+                </div>
+            </div>
+            <div class="article-hero__photo">
+                <div class="article-hero__img">
+                    <img src="img/article-hero-img.webp" alt="" />
+                </div>
+                <div class="article-hero__label">
+                    Категория: огнезащита текстильных материалов
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="article-content">
+        <div class="container">
+            <div class="article-content__content">
+                <div class="article-content__others">
+                    <div class="article-content__others_title">Другие статьи:</div>
+                    <div class="article-content__others_items">
+                        <div class="article-content__others_item">
+                            <div class="article-content__others_img">
+                                <img src="img/article-content-others-img.webp" alt="" />
+                            </div>
+                            <div class="article-content__others_info">
+                                <div class="article-content__others_text">
+                                    Огнезащита текстильных материалов
+                                </div>
+                                <a href="" class="link article-content__others_link">
+                                    <span>подробнее</span>
+                                    <svg
+                                            width="11"
+                                            height="14"
+                                            viewBox="0 0 11 14"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                                d="M11 7L0.5 13.0622L0.500001 0.937822L11 7Z"
+                                                fill="#DE2C2C"
+                                        />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="article-content__others_item">
+                            <div class="article-content__others_img">
+                                <img src="img/article-content-others-img.webp" alt="" />
+                            </div>
+                            <div class="article-content__others_info">
+                                <div class="article-content__others_text">
+                                    Огнезащита текстильных материалов
+                                </div>
+                                <a href="" class="link article-content__others_link">
+                                    <span>подробнее</span>
+                                    <svg
+                                            width="11"
+                                            height="14"
+                                            viewBox="0 0 11 14"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                                d="M11 7L0.5 13.0622L0.500001 0.937822L11 7Z"
+                                                fill="#DE2C2C"
+                                        />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="article-content__others_item">
+                            <div class="article-content__others_img">
+                                <img src="img/article-content-others-img.webp" alt="" />
+                            </div>
+                            <div class="article-content__others_info">
+                                <div class="article-content__others_text">
+                                    Огнезащита текстильных материалов
+                                </div>
+                                <a href="" class="link article-content__others_link">
+                                    <span>подробнее</span>
+                                    <svg
+                                            width="11"
+                                            height="14"
+                                            viewBox="0 0 11 14"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                                d="M11 7L0.5 13.0622L0.500001 0.937822L11 7Z"
+                                                fill="#DE2C2C"
+                                        />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article-content__info">
+                    <div class="article-content__info_title">
+                        Огнезащита текстильных материалов
+                    </div>
+                    <div class="article-content__info_text">
+                        <p>
+                            Ut phasellus in fames tellus. Malesuada in sed id facilisis
+                            nunc pretium velit. Tortor fringilla pellentesque odio erat
+                            non auctor. Ipsum egestas libero faucibus pellentesque
+                            sagittis imperdiet. Sed proin cursus erat sed nullam. At sed
+                            elementum egestas aliquet nullam viverra lectus tincidunt.
+                            Cras euismod et ullamcorper tortor diam. Venenatis id
+                            phasellus amet ut et consectetur hendrerit turpis. Id vel
+                            purus vitae et. Nullam in turpis morbi laoreet senectus sed
+                            ullamcorper. Neque in pellentesque quisque malesuada. Facilisi
+                            amet justo nunc neque purus egestas curabitur tristique.
+                            Molestie tristique dignissim egestas etiam in suspendisse
+                            proin faucibus. Rutrum libero sodales proin in. Convallis
+                            malesuada nulla consectetur fames ornare praesent.
+                        </p>
+                    </div>
+                    <ul class="article-content__info_list">
+                        <li class="article-content__info_list-item">
+                            Molestie tristique dignissim egestas
+                        </li>
+                        <li class="article-content__info_list-item">
+                            Molestie tristique dignissim egestas
+                        </li>
+                        <li class="article-content__info_list-item">
+                            Molestie tristique dignissim egestas
+                        </li>
+                    </ul>
+                    <div class="article-content__info_gray">
+                        <div class="article-content__info_gray_text">
+                            Профессиональная организация производства и всех сопутствующих
+                            бизнес-процессов с опорой на современную научную базу
+                            позволили наладить выпуск качественной продукции с минимумом
+                            издержек|и тем самым — обеспечить наиболее конкурентные цены.
+                        </div>
+                    </div>
+                    <div class="article-content__info_title">
+                        Огнезащита текстильных материалов
+                    </div>
+                    <div class="article-content__info_text">
+                        <p>
+                            Ut phasellus in fames tellus. Malesuada in sed id facilisis
+                            nunc pretium velit. Tortor fringilla pellentesque odio erat
+                            non auctor. Ipsum egestas libero faucibus pellentesque
+                            sagittis imperdiet. Sed proin cursus erat sed nullam. At sed
+                            elementum egestas aliquet nullam viverra lectus tincidunt.
+                        </p>
+                        <p>
+                            Ut phasellus in fames tellus. Malesuada in sed id facilisis
+                            nunc pretium velit. Tortor fringilla pellentesque odio erat
+                            non auctor. Ipsum egestas libero faucibus pellentesque
+                            sagittis imperdiet. Sed proin cursus erat sed nullam. At sed
+                            elementum egestas aliquet nullam viverra lectus tincidunt.
+                            Cras euismod et ullamcorper tortor diam. Venenatis id
+                            phasellus amet ut et consectetur hendrerit turpis. Id vel
+                            purus vitae et. Nullam in turpis morbi laoreet senectus sed
+                            ullamcorper. Neque in pellentesque quisque malesuada. Facilisi
+                            amet justo nunc neque purus egestas curabitur tristique.
+                            Molestie tristique dignissim egestas etiam in suspendisse
+                            proin faucibus. Rutrum libero sodales proin in. Convallis
+                            malesuada nulla consectetur fames ornare praesent.
+                        </p>
+                        <p>
+                            Ut phasellus in fames tellus. Malesuada in sed id facilisis
+                            nunc pretium velit. Tortor fringilla pellentesque odio erat
+                            non auctor. Ipsum egestas libero faucibus pellentesque
+                            sagittis imperdiet. Sed proin cursus erat sed nullam. At sed
+                            elementum egestas aliquet nullam viverra lectus tincidunt.
+                        </p>
+                        <p>
+                            Ut phasellus in fames tellus. Malesuada in sed id facilisis
+                            nunc pretium velit. Tortor fringilla pellentesque odio erat
+                            non auctor. Ipsum egestas libero faucibus pellentesque
+                            sagittis imperdiet. Sed proin cursus erat sed nullam. At sed
+                            elementum egestas aliquet nullam viverra lectus tincidunt.
+                        </p>
+                    </div>
+                    <ul class="article-content__info_list">
+                        <div class="article-content__info_list_title">
+                            Используемая литература:
+                        </div>
+                        <li class="article-content__info_list-item">
+                            <a href="">https://primer/564x/e9</a>
+                        </li>
+                        <li class="article-content__info_list-item">
+                            <a href="">https://primer/564x/e9</a>
+                        </li>
+                        <li class="article-content__info_list-item">
+                            <a href=""
+                            >Способы и средства огнезащиты текстильных материалов.
+                                Руководство</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="comments">
+        <div class="container">
+            <div class="comments__content">
+                <div class="comments__title">Комментарии</div>
+                <div class="comments__list">
+                    <div class="comments__item comment">
+                        <div class="comment__top">
+                            <div class="comment__user">Елена</div>
+                            <div class="comment__rate">
+                                <img
+                                        src="img/star-full.svg"
+                                        alt=""
+                                        class="comment__rate_star"
+                                />
+                                <img
+                                        src="img/star-full.svg"
+                                        alt=""
+                                        class="comment__rate_star"
+                                />
+                                <img
+                                        src="img/star-full.svg"
+                                        alt=""
+                                        class="comment__rate_star"
+                                />
+                                <img
+                                        src="img/star-full.svg"
+                                        alt=""
+                                        class="comment__rate_star"
+                                />
+                                <img
+                                        src="img/star-empty.svg"
+                                        alt=""
+                                        class="comment__rate_star"
+                                />
+                            </div>
+                        </div>
+                        <div class="comment__text">
+                            Применяется для внутренних и наружных работ, гидроизоляции
+                            бетонных, кирпичных, железобетонных конструкций с повышенным
+                            трещинообразованием, подвергающимся осадке и вибрациям,
+                            температурным и механическим деформациям. Применяется для
+                            внутренних и наружных работ, гидроизоляции бетонных,
+                            кирпичных, железобетонных конструкций с повышенным
+                            трещинообразованием, подвергающимся осадке и вибрациям,
+                            температурным и механическим деформациям.
+                        </div>
+                        <div class="comment__date">25/09/22</div>
+                    </div>
+                    <div class="comments__item comment">
+                        <div class="comment__top">
+                            <div class="comment__user">Елена</div>
+                            <div class="comment__rate">
+                                <img
+                                        src="img/star-full.svg"
+                                        alt=""
+                                        class="comment__rate_star"
+                                />
+                                <img
+                                        src="img/star-full.svg"
+                                        alt=""
+                                        class="comment__rate_star"
+                                />
+                                <img
+                                        src="img/star-full.svg"
+                                        alt=""
+                                        class="comment__rate_star"
+                                />
+                                <img
+                                        src="img/star-full.svg"
+                                        alt=""
+                                        class="comment__rate_star"
+                                />
+                                <img
+                                        src="img/star-empty.svg"
+                                        alt=""
+                                        class="comment__rate_star"
+                                />
+                            </div>
+                        </div>
+                        <div class="comment__text">
+                            Применяется для внутренних и наружных работ, гидроизоляции
+                            бетонных, кирпичных, железобетонных конструкций с повышенным
+                            трещинообразованием, подвергающимся осадке и вибрациям,
+                            температурным и механическим деформациям. Применяется для
+                            внутренних и наружных работ, гидроизоляции бетонных,
+                            кирпичных, железобетонных конструкций с повышенным
+                            трещинообразованием, подвергающимся осадке и вибрациям,
+                            температурным и механическим деформациям.
+                        </div>
+                        <div class="comment__date">25/09/22</div>
+                    </div>
+                    <div class="comments__item comment">
+                        <div class="comment__top">
+                            <div class="comment__user">Елена</div>
+                            <div class="comment__rate">
+                                <img
+                                        src="img/star-full.svg"
+                                        alt=""
+                                        class="comment__rate_star"
+                                />
+                                <img
+                                        src="img/star-full.svg"
+                                        alt=""
+                                        class="comment__rate_star"
+                                />
+                                <img
+                                        src="img/star-full.svg"
+                                        alt=""
+                                        class="comment__rate_star"
+                                />
+                                <img
+                                        src="img/star-full.svg"
+                                        alt=""
+                                        class="comment__rate_star"
+                                />
+                                <img
+                                        src="img/star-empty.svg"
+                                        alt=""
+                                        class="comment__rate_star"
+                                />
+                            </div>
+                        </div>
+                        <div class="comment__text">
+                            Применяется для внутренних и наружных работ, гидроизоляции
+                            бетонных, кирпичных, железобетонных конструкций с повышенным
+                            трещинообразованием, подвергающимся осадке и вибрациям,
+                            температурным и механическим деформациям. Применяется для
+                            внутренних и наружных работ, гидроизоляции бетонных,
+                            кирпичных, железобетонных конструкций с повышенным
+                            трещинообразованием, подвергающимся осадке и вибрациям,
+                            температурным и механическим деформациям.
+                        </div>
+                        <div class="comment__date">25/09/22</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="comment-form">
+        <div class="container">
+            <div class="comment-form__title">Оставьте ваш комментарий</div>
+            <div class="comment-form_content">
+                <div class="comment-form_content_inputs">
+                    <label class="comment-form__label">
+                        <input placeholder="Имя" type="text" />
+                    </label>
+                    <label class="comment-form__label">
+                        <input placeholder="Ваш комментарий" type="text" />
+                    </label>
+                    <div class="comment-form__rate">
+                        <div class="comment-form__rate_title">Ваша оценка</div>
+                        <div class="comment-form__rating">
+                            <div class="comment-form__rating-items">
+                                <input
+                                        class="comment-form__rating-star"
+                                        type="radio"
+                                        name="comment-form__rating"
+                                        id="comment-form__rating-5"
+                                        value="5"
+                                />
+                                <label
+                                        class="comment-form__rating-label"
+                                        for="comment-form__rating-5"
+                                ></label>
+                                <input
+                                        class="comment-form__rating-star"
+                                        type="radio"
+                                        name="comment-form__rating"
+                                        id="comment-form__rating-4"
+                                        value="4"
+                                />
+                                <label
+                                        class="comment-form__rating-label"
+                                        for="comment-form__rating-4"
+                                ></label>
+                                <input
+                                        class="comment-form__rating-star"
+                                        type="radio"
+                                        name="comment-form__rating"
+                                        id="comment-form__rating-3"
+                                        value="3"
+                                />
+                                <label
+                                        class="comment-form__rating-label"
+                                        for="comment-form__rating-3"
+                                ></label>
+                                <input
+                                        class="comment-form__rating-star"
+                                        type="radio"
+                                        name="comment-form__rating"
+                                        id="comment-form__rating-2"
+                                        value="2"
+                                />
+                                <label
+                                        class="comment-form__rating-label"
+                                        for="comment-form__rating-2"
+                                ></label>
+                                <input
+                                        class="comment-form__rating-star"
+                                        type="radio"
+                                        name="comment-form__rating"
+                                        id="comment-form__rating-1"
+                                        value="1"
+                                />
+                                <label
+                                        class="comment-form__rating-label"
+                                        for="comment-form__rating-1"
+                                ></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="comment-form_content_right">
+                    <button type="button" class="button comment-form__button">
+                        <span>Оставить заявку</span>
+                    </button>
+                    <label class="comment-form__checkbox_label">
+                        <input
+                                class="comment-form__checkbox_input"
+                                type="checkbox"
+                                name=""
+                                id=""
+                                checked
+                        />
+                        <span></span>
+                        <div class="comment-form__checkbox_title">
+                            Cогласие c политикой конфиденциальности
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container footer__container">
+        <div class="footer__bg">
+            <img src="img/footer-bg.png" alt="" />
+        </div>
+        <div class="footer__box footer__box--phone">
+            <div class="footer__phone-box">
+                <a href="" class="footer__phone">8 800 600 28 20</a>
+                <p class="footer__phone-text">Ежедневно 9:00-21:00</p>
+            </div>
+            <button type="button" class="button popup-request">
+                <span>Оставить заявку</span>
+            </button>
+        </div>
+        <div class="footer__box">
+            <a href="" class="footer__list-title">Работы</a>
+            <ul class="footer__list">
+                <li class="footer__list-item">
+                    <a href="">Антикоррозия</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="">Проектирование</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="">Огнезащита</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="">Реализованные проекты</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__box">
+            <a href="" class="footer__list-title">Каталог</a>
+            <ul class="footer__list">
+                <li class="footer__list-item">
+                    <a href="">Гидроизоляция</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="">Огнезащита</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="">Ремонтные смеси</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__box footer__box--logo">
+            <ul class="footer__list">
+                <li class="footer__list-item">
+                    <a href="">Статьи</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="">Контакты</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="">О нас</a>
+                </li>
+            </ul>
+            <div class="footer__logo-box">
+                <p class="footer__logo-text">Смотрите также:</p>
+                <a href="" class="footer__logo">
+                    <img src="img/logo-min.svg" alt="" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer__container-bottom">
+        <p>Copiright © 2022 М.О. «Алиал-Тех»</p>
+        <a href="">info@alialmash.ru</a>
+    </div>
+</footer>
+
+<section class="modal-request">
+    <form class="modal modal-request__form">
+        <div class="modal-request__content">
+            <button
+                    type="button"
+                    class="modal__close"
+                    data-izimodal-close
+            ></button>
+            <h2 class="modal-request__title">Оставьте заявку</h2>
+            <div class="modal-request__form-content">
+                <label class="modal-request__label">
+                    <input placeholder="Имя" type="text" />
+                </label>
+                <label class="modal-request__label">
+                    <input placeholder="Фамилия" type="text" />
+                </label>
+                <label class="modal-request__label">
+                    <input placeholder="Номер телефона" type="tel" />
+                </label>
+                <label class="modal-request__label">
+                    <input placeholder="Электронная почта" type="email" />
+                </label>
+                <label class="modal-request__label-textarea">
+                    <textarea placeholder="Ваш комментарий"></textarea>
+                </label>
+                <div class="modal-request__form-footer">
+                    <button type="button" class="button" data-izimodal-next>
+                        <span>Оставить заявку</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="modal modal-request__complete">
+        <div class="modal-request__content">
+            <button
+                    type="button"
+                    class="modal__close"
+                    data-izimodal-close
+            ></button>
+            <h2 class="modal-request__complete-title">Заявка отправлена</h2>
+            <p class="modal-request__complete-text">
+                Ваша заявка принята в обработку.
+                <br />Мы свяжемся с вами в ближайшее время.
+            </p>
+            <button
+                    type="button"
+                    class="modal-request__complete-btn button"
+                    data-izimodal-close
+            >
+                <span>Готово</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/iziModal.min.js"></script>
+<script src="js/swiper.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

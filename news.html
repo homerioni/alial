@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <meta name="description" content="another website" />
+    <title>Страница</title>
+
+    <link rel="stylesheet" href="font/stylesheet.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/iziModal.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header class="header">
+    <div class="container header__container-mob mobile">
+        <button type="button" class="header__burger">
+            <span></span>
+        </button>
+        <a href="/" class="header__logo">
+            <img src="img/logo.svg" alt="" />
+        </a>
+        <a href="" class="header__phone-mob">
+            <img src="img/header-phone-mob.svg" alt="" />
+        </a>
+    </div>
+    <nav class="container header__content">
+        <a href="/" class="header__logo">
+            <img src="img/logo.svg" alt="" />
+        </a>
+        <div class="header__language-box">
+            <button type="button" class="header__language-btn">
+                <svg
+                        class="header__language-icon"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 30 30"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                            d="M15 26.25C21.2132 26.25 26.25 21.2132 26.25 15C26.25 8.7868 21.2132 3.75 15 3.75C8.7868 3.75 3.75 8.7868 3.75 15C3.75 21.2132 8.7868 26.25 15 26.25Z"
+                            stroke="#959595"
+                            stroke-width="1.5"
+                            stroke-miterlimit="10"
+                    />
+                    <path
+                            d="M4.39453 11.25H25.6055"
+                            stroke="#959595"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                    />
+                    <path
+                            d="M4.39453 18.75H25.6055"
+                            stroke="#959595"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                    />
+                    <path
+                            d="M15 25.9453C17.5888 25.9453 19.6875 21.0449 19.6875 15C19.6875 8.95507 17.5888 4.05469 15 4.05469C12.4112 4.05469 10.3125 8.95507 10.3125 15C10.3125 21.0449 12.4112 25.9453 15 25.9453Z"
+                            stroke="#959595"
+                            stroke-width="1.5"
+                            stroke-miterlimit="10"
+                    />
+                </svg>
+                <span>RU</span>
+                <svg
+                        class="header__language-arrow"
+                        width="10"
+                        height="6"
+                        viewBox="0 0 10 6"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                            d="M5 6L0.669873 -8.15666e-07L9.33013 -5.85621e-08L5 6Z"
+                            fill="black"
+                    />
+                </svg>
+            </button>
+            <ul class="header__language-list">
+                <li class="header__language-link active">
+                    <a>Ru</a>
+                </li>
+                <li class="header__language-link">
+                    <a href="">En</a>
+                </li>
+            </ul>
+        </div>
+        <ul class="header__menu">
+            <li class="header__menu-item">
+                <a href="">Главная</a>
+                <svg
+                        width="12"
+                        height="9"
+                        viewBox="0 0 12 9"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                            d="M6 9L0.803849 -9.78799e-07L11.1962 -7.02746e-08L6 9Z"
+                            fill="#151313"
+                    />
+                </svg>
+                <ul class="header__list">
+                    <li class="header__list-item">
+                        <a href="">О нас</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="">Новости</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="">Реализованные проекты</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="">Каталог</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="header__menu-item">
+                <a href="">Гидроизоляция</a>
+                <svg
+                        width="12"
+                        height="9"
+                        viewBox="0 0 12 9"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                            d="M6 9L0.803849 -9.78799e-07L11.1962 -7.02746e-08L6 9Z"
+                            fill="#151313"
+                    />
+                </svg>
+                <ul class="header__list">
+                    <li class="header__list-item">
+                        <a href="">О нас</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="">Новости</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="">Реализованные проекты</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="">Каталог</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="header__menu-item">
+                <a href="">Огнезащита</a>
+                <svg
+                        width="12"
+                        height="9"
+                        viewBox="0 0 12 9"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                            d="M6 9L0.803849 -9.78799e-07L11.1962 -7.02746e-08L6 9Z"
+                            fill="#151313"
+                    />
+                </svg>
+                <ul class="header__list">
+                    <li class="header__list-item">
+                        <a href="">О нас</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="">Новости</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="">Реализованные проекты</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="">Каталог</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="header__menu-item">
+                <a href="">Антикоррозия</a>
+                <svg
+                        width="12"
+                        height="9"
+                        viewBox="0 0 12 9"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                            d="M6 9L0.803849 -9.78799e-07L11.1962 -7.02746e-08L6 9Z"
+                            fill="#151313"
+                    />
+                </svg>
+                <ul class="header__list">
+                    <li class="header__list-item">
+                        <a href="">О нас</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="">Новости</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="">Реализованные проекты</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="">Каталог</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="header__menu-item">
+                <a href="">Статьи</a>
+            </li>
+            <li class="header__menu-item">
+                <a href="">Контакты</a>
+            </li>
+        </ul>
+        <div class="header__phone-box">
+            <a href="" class="header__phone">8 800 600 28 20</a>
+            <p class="header__phone-text">Ежедневно 9:00-21:00</p>
+        </div>
+        <button
+                type="button"
+                class="header__request-link link popup-request desktop"
+        >
+            <span>Заявка</span>
+            <svg
+                    width="11"
+                    height="14"
+                    viewBox="0 0 11 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                        d="M11 7L0.5 13.0622L0.500001 0.937822L11 7Z"
+                        fill="#DE2C2C"
+                />
+            </svg>
+            <svg
+                    width="11"
+                    height="14"
+                    viewBox="0 0 11 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                        d="M11 7L0.5 13.0622L0.500001 0.937822L11 7Z"
+                        fill="#DE2C2C"
+                />
+            </svg>
+        </button>
+        <button
+                type="button"
+                class="header__request-link button popup-request mobile"
+        >
+            <span>Оставить заявку</span>
+        </button>
+    </nav>
+    <div class="header__burger-bg">
+        <button type="button" class="header__close-btn"></button>
+    </div>
+</header>
+
+<main>
+    <section class="breadcrumbs">
+        <div class="container breadcrumbs__container">
+            <a href="" class="breadcrumbs__item">Главная</a>
+            <a href="" class="breadcrumbs__item">Новости</a>
+        </div>
+    </section>
+
+    <section class="news-hero">
+        <div class="container">
+            <div class="news-hero__content">
+                <div class="news-hero__left">
+                    <div class="news-hero__item">
+                        <img src="img/news-hero-item-img-1.webp" alt="" />
+                        <div class="news-hero__item_text">
+                            <div class="news-hero__item_title">
+                                Огнезащита текстильных материалов
+                            </div>
+                            <a href="" class="news-hero__item_link link">
+                                <span>подробнее</span>
+                                <svg
+                                        width="11"
+                                        height="14"
+                                        viewBox="0 0 11 14"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                            d="M11 7L0.5 13.0622L0.500001 0.937822L11 7Z"
+                                            fill="#DE2C2C"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-hero__right">
+                    <div class="news-hero__item">
+                        <img src="img/news-hero-item-img-2.webp" alt="" />
+                        <div class="news-hero__item_text">
+                            <div class="news-hero__item_title">
+                                Огнезащита текстильных материалов
+                            </div>
+                            <a href="" class="news-hero__item_link link">
+                                <span>подробнее</span>
+                                <svg
+                                        width="11"
+                                        height="14"
+                                        viewBox="0 0 11 14"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                            d="M11 7L0.5 13.0622L0.500001 0.937822L11 7Z"
+                                            fill="#DE2C2C"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="news-hero__item">
+                        <img src="img/news-hero-item-img-3.webp" alt="" />
+                        <div class="news-hero__item_text">
+                            <div class="news-hero__item_title">
+                                Огнезащита текстильных материалов
+                            </div>
+                            <a href="" class="news-hero__item_link link">
+                                <span>подробнее</span>
+                                <svg
+                                        width="11"
+                                        height="14"
+                                        viewBox="0 0 11 14"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                            d="M11 7L0.5 13.0622L0.500001 0.937822L11 7Z"
+                                            fill="#DE2C2C"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="news">
+        <div class="container">
+            <div class="news__content">
+                <div class="news__card">
+                    <div class="news__card_photo">
+                        <img src="img/article-item-img-3.webp" alt="" />
+                    </div>
+                    <div class="news__card_info">
+                        <div class="news__card_date">25/09/22</div>
+                        <div class="news__card_title">
+                            Огнезащита текстильных материалов
+                        </div>
+                        <div class="news__card_text">
+                            Главная цель использования разнообразных видов тканейи
+                            ковровых покрытий – благоустройство своего жильяи создание...
+                        </div>
+                        <a href="" class="news__card_link link">
+                            <span>подробнее</span>
+                            <svg
+                                    width="11"
+                                    height="14"
+                                    viewBox="0 0 11 14"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                        d="M11 7L0.5 13.0622L0.500001 0.937822L11 7Z"
+                                        fill="#DE2C2C"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="news__card">
+                    <div class="news__card_photo">
+                        <img src="img/article-item-img-3.webp" alt="" />
+                    </div>
+                    <div class="news__card_info">
+                        <div class="news__card_date">25/09/22</div>
+                        <div class="news__card_title">
+                            Огнезащита текстильных материалов
+                        </div>
+                        <div class="news__card_text">
+                            Главная цель использования разнообразных видов тканейи
+                            ковровых покрытий – благоустройство своего жильяи создание...
+                        </div>
+                        <a href="" class="news__card_link link">
+                            <span>подробнее</span>
+                            <svg
+                                    width="11"
+                                    height="14"
+                                    viewBox="0 0 11 14"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                        d="M11 7L0.5 13.0622L0.500001 0.937822L11 7Z"
+                                        fill="#DE2C2C"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="news__card">
+                    <div class="news__card_photo">
+                        <img src="img/article-item-img-3.webp" alt="" />
+                    </div>
+                    <div class="news__card_info">
+                        <div class="news__card_date">25/09/22</div>
+                        <div class="news__card_title">
+                            Огнезащита текстильных материалов
+                        </div>
+                        <div class="news__card_text">
+                            Главная цель использования разнообразных видов тканейи
+                            ковровых покрытий – благоустройство своего жильяи создание...
+                        </div>
+                        <a href="" class="news__card_link link">
+                            <span>подробнее</span>
+                            <svg
+                                    width="11"
+                                    height="14"
+                                    viewBox="0 0 11 14"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                        d="M11 7L0.5 13.0622L0.500001 0.937822L11 7Z"
+                                        fill="#DE2C2C"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="news__card">
+                    <div class="news__card_photo">
+                        <img src="img/article-item-img-3.webp" alt="" />
+                    </div>
+                    <div class="news__card_info">
+                        <div class="news__card_date">25/09/22</div>
+                        <div class="news__card_title">
+                            Огнезащита текстильных материалов
+                        </div>
+                        <div class="news__card_text">
+                            Главная цель использования разнообразных видов тканейи
+                            ковровых покрытий – благоустройство своего жильяи создание...
+                        </div>
+                        <a href="" class="news__card_link link">
+                            <span>подробнее</span>
+                            <svg
+                                    width="11"
+                                    height="14"
+                                    viewBox="0 0 11 14"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                        d="M11 7L0.5 13.0622L0.500001 0.937822L11 7Z"
+                                        fill="#DE2C2C"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="news__card">
+                    <div class="news__card_photo">
+                        <img src="img/article-item-img-3.webp" alt="" />
+                    </div>
+                    <div class="news__card_info">
+                        <div class="news__card_date">25/09/22</div>
+                        <div class="news__card_title">
+                            Огнезащита текстильных материалов
+                        </div>
+                        <div class="news__card_text">
+                            Главная цель использования разнообразных видов тканейи
+                            ковровых покрытий – благоустройство своего жильяи создание...
+                        </div>
+                        <a href="" class="news__card_link link">
+                            <span>подробнее</span>
+                            <svg
+                                    width="11"
+                                    height="14"
+                                    viewBox="0 0 11 14"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                        d="M11 7L0.5 13.0622L0.500001 0.937822L11 7Z"
+                                        fill="#DE2C2C"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="news__card">
+                    <div class="news__card_photo">
+                        <img src="img/article-item-img-3.webp" alt="" />
+                    </div>
+                    <div class="news__card_info">
+                        <div class="news__card_date">25/09/22</div>
+                        <div class="news__card_title">
+                            Огнезащита текстильных материалов
+                        </div>
+                        <div class="news__card_text">
+                            Главная цель использования разнообразных видов тканейи
+                            ковровых покрытий – благоустройство своего жильяи создание...
+                        </div>
+                        <a href="" class="news__card_link link">
+                            <span>подробнее</span>
+                            <svg
+                                    width="11"
+                                    height="14"
+                                    viewBox="0 0 11 14"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                        d="M11 7L0.5 13.0622L0.500001 0.937822L11 7Z"
+                                        fill="#DE2C2C"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="news__page-pagination page-pagination">
+                <a href="" class="page-pagination__arrow prev">
+                    <svg
+                            width="11"
+                            height="14"
+                            viewBox="0 0 11 14"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                                d="M3.0598e-07 7L10.5 0.937824L10.5 13.0622L3.0598e-07 7Z"
+                                fill="#959595"
+                        />
+                    </svg>
+                    <span>Назад</span>
+                </a>
+                <div class="page-pagination__numbers">
+                    <a href="" class="page-pagination__link">
+                        <span>1</span>
+                    </a>
+                    <a href="" class="page-pagination__link">
+                        <span>2</span>
+                    </a>
+                    <a href="" class="page-pagination__link active">
+                        <span>3</span>
+                    </a>
+                    <a href="" class="page-pagination__link">
+                        <span>4</span>
+                    </a>
+                    <a href="" class="page-pagination__link">
+                        <span>5</span>
+                    </a>
+                </div>
+                <a href="" class="page-pagination__arrow next">
+                    <span>Вперед</span>
+                    <svg
+                            width="11"
+                            height="14"
+                            viewBox="0 0 11 14"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                                d="M11 7L0.5 13.0622L0.500001 0.937822L11 7Z"
+                                fill="#959595"
+                        />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container footer__container">
+        <div class="footer__bg">
+            <img src="img/footer-bg.png" alt="" />
+        </div>
+        <div class="footer__box footer__box--phone">
+            <div class="footer__phone-box">
+                <a href="" class="footer__phone">8 800 600 28 20</a>
+                <p class="footer__phone-text">Ежедневно 9:00-21:00</p>
+            </div>
+            <button type="button" class="button popup-request">
+                <span>Оставить заявку</span>
+            </button>
+        </div>
+        <div class="footer__box">
+            <a href="" class="footer__list-title">Работы</a>
+            <ul class="footer__list">
+                <li class="footer__list-item">
+                    <a href="">Антикоррозия</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="">Проектирование</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="">Огнезащита</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="">Реализованные проекты</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__box">
+            <a href="" class="footer__list-title">Каталог</a>
+            <ul class="footer__list">
+                <li class="footer__list-item">
+                    <a href="">Гидроизоляция</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="">Огнезащита</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="">Ремонтные смеси</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__box footer__box--logo">
+            <ul class="footer__list">
+                <li class="footer__list-item">
+                    <a href="">Статьи</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="">Контакты</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="">О нас</a>
+                </li>
+            </ul>
+            <div class="footer__logo-box">
+                <p class="footer__logo-text">Смотрите также:</p>
+                <a href="" class="footer__logo">
+                    <img src="img/logo-min.svg" alt="" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer__container-bottom">
+        <p>Copiright © 2022 М.О. «Алиал-Тех»</p>
+        <a href="">info@alialmash.ru</a>
+    </div>
+</footer>
+
+<section class="modal-request">
+    <form class="modal modal-request__form">
+        <div class="modal-request__content">
+            <button
+                    type="button"
+                    class="modal__close"
+                    data-izimodal-close
+            ></button>
+            <h2 class="modal-request__title">Оставьте заявку</h2>
+            <div class="modal-request__form-content">
+                <label class="modal-request__label">
+                    <input placeholder="Имя" type="text" />
+                </label>
+                <label class="modal-request__label">
+                    <input placeholder="Фамилия" type="text" />
+                </label>
+                <label class="modal-request__label">
+                    <input placeholder="Номер телефона" type="tel" />
+                </label>
+                <label class="modal-request__label">
+                    <input placeholder="Электронная почта" type="email" />
+                </label>
+                <label class="modal-request__label-textarea">
+                    <textarea placeholder="Ваш комментарий"></textarea>
+                </label>
+                <div class="modal-request__form-footer">
+                    <button type="button" class="button" data-izimodal-next>
+                        <span>Оставить заявку</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="modal modal-request__complete">
+        <div class="modal-request__content">
+            <button
+                    type="button"
+                    class="modal__close"
+                    data-izimodal-close
+            ></button>
+            <h2 class="modal-request__complete-title">Заявка отправлена</h2>
+            <p class="modal-request__complete-text">
+                Ваша заявка принята в обработку.
+                <br />Мы свяжемся с вами в ближайшее время.
+            </p>
+            <button
+                    type="button"
+                    class="modal-request__complete-btn button"
+                    data-izimodal-close
+            >
+                <span>Готово</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/iziModal.min.js"></script>
+<script src="js/swiper.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

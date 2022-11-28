@@ -465,3 +465,18 @@ const stages_slider = new Swiper('.stages__slider', {
         prevEl: '.stages .prev',
     },
 });
+
+const similar_products_slider = new Swiper('.similar-products__content', {
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 'auto',
+
+    navigation: {
+        nextEl: '.similar-products .next',
+        prevEl: '.similar-products .prev',
+    },
+
+    autoplay: {
+        delay: 12000,
+    },
+})

@@ -159,4 +159,29 @@ $(document).ready(function () {
         $('.modal-realized').iziModal('open');
     });
 
+    // Article
+    $('.article__tab input').change(function () {
+        $(this).parent().siblings('.article__tab').removeClass('active')
+        $(this).parent().addClass('active')
+    })
+
+    // Product-info
+    $('.product-info__tab input').change(function () {
+        $(this).parent().siblings('.product-info__tab').removeClass('active');
+        $(this).parent().addClass('active');
+    })
+
+    document.querySelectorAll('.product-info__tab').forEach(function (tabBtn) {
+        tabBtn.addEventListener('click', function (event) {
+            const path = event.currentTarget.dataset.path
+
+            document
+                .querySelectorAll('.product-info__panel')
+                .forEach(function (tabContent) {
+                    tabContent.classList.remove('active')
+                })
+            document.querySelector(`[data-target="${path}"]`).classList.add('active')
+        })
+    })
+
 });
