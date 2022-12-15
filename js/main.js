@@ -154,9 +154,16 @@ $(document).ready(function () {
     $('.popup-realized').click(function () {
         $('.modal-realized').iziModal('open');
     });
+    modal_realized_slider.removeAllSlides();
+    modal_realized_slider.update();
     $('.realized__img-box').click(function () {
+        modal_realized_slider.removeAllSlides();
+        $(this).parent().find('.realized__img-box').each(function () {
+            modal_realized_slider.appendSlide('<div class="modal-realized__slide swiper-slide"><img src="'+ $(this).find('img').attr('src') +'" alt=""></div>');
+        });
         modal_realized_slider.slideToLoop($(this).index());
         $('.modal-realized').iziModal('open');
+        modal_realized_slider.update();
     });
 
     // Article
