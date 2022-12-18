@@ -97,9 +97,8 @@ $(document).ready(function () {
         $(this).parent().removeClass('focus');
     });
 
-    // Modal
-    // Work1
-    $('.modal-work1').iziModal({
+    // Modal work
+    $('.modal-work').iziModal({
         overlayColor: 'rgba(0, 3, 21, 0.5)',
         width: '108rem',
         zindex: 30,
@@ -114,30 +113,7 @@ $(document).ready(function () {
             $('body').width('').removeClass('lock');
         },
     });
-    $('.popup-work1').click(function () {
-        $('.modal-work1').iziModal('open');
-    });
-
-    // Modal
-    // Work2
-    $('.modal-work2').iziModal({
-        overlayColor: 'rgba(0, 3, 21, 0.5)',
-        width: '108rem',
-        zindex: 30,
-        transitionIn: 'fadeInUp',
-        transitionOut: 'comingOut',
-        navigateArrows: false,
-        navigateCaption: false,
-        onOpening: function() {
-            $('body').width($('body').width()).addClass('lock');
-        },
-        onClosing: function() {
-            $('body').width('').removeClass('lock');
-        },
-    });
-    $('.popup-work2').click(function () {
-        $('.modal-work2').iziModal('open');
-    });
+    $('.modal-work:not([data-complete])').iziModal('open');
 
     // Modal
     // Licenses
