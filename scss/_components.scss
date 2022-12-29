@@ -57,6 +57,7 @@
 }
 
 .link {
+  z-index: 3;
   display: flex;
   align-items: center;
   width: fit-content;
@@ -72,20 +73,21 @@
     width: 1.1rem;
     height: 1.4rem;
     margin-left: 0.8rem;
-    transition: transform .3s ease;
+    transition: opacity .3s ease;
 
     path {
       fill: $red;
     }
 
     + svg {
+      opacity: 0;
       margin-left: 2px;
     }
   }
 
   &:hover {
-    > svg {
-      transform: translateX(0.6rem);
+    > svg + svg {
+      opacity: 1;
     }
   }
 }
@@ -363,12 +365,6 @@
       width: 1.8rem;
       height: 2.4rem;
       margin-left: 1.2rem;
-    }
-
-    &:hover {
-      > svg {
-        transform: translateX(1.2rem);
-      }
     }
   }
 

@@ -148,12 +148,10 @@
 
   &__menu {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     column-gap: 2rem;
     row-gap: 1rem;
-    max-width: 81.4rem;
   }
 
   &__menu-item {
@@ -167,7 +165,12 @@
       color: $gray-text;
     }
 
-    > svg {
+    > a {
+      display: flex;
+      align-items: center;
+    }
+
+    > a > svg {
       width: 1.2rem;
       height: 0.9rem;
       margin-left: 1.2rem;
@@ -180,7 +183,7 @@
 
     @media (min-width: 48.01em) {
       &:hover {
-        > svg {
+        > a > svg {
           transform: scaleY(-1);
         }
 
@@ -431,13 +434,13 @@
       font-size: 3.6rem;
       line-height: 4.8rem;
 
-      > svg {
+      > a > svg {
         width: 2.4rem;
         height: 1.8rem;
         margin-left: 2.4rem;
       }
 
-      &.active {
+      > a.active {
         > svg {
           transform: scaleY(-1);
         }
