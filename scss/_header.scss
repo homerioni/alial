@@ -148,8 +148,12 @@
 
   &__menu {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 2rem;
+    justify-content: center;
+    column-gap: 2rem;
+    row-gap: 1rem;
+    max-width: 81.4rem;
   }
 
   &__menu-item {
@@ -193,7 +197,8 @@
     opacity: 0;
     position: absolute;
     left: 0;
-    top: calc(100% + 2rem);
+    top: calc(100% + 1rem);
+    z-index: 5;
     width: 32.4rem;
     padding: 2rem 2.4rem;
     background-color: white;

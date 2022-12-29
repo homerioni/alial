@@ -144,6 +144,40 @@ $(document).ready(function () {
         modal_realized_slider.update();
     });
 
+    // Modal map
+    $('.modal-map').iziModal({
+        overlayColor: 'rgba(0, 3, 21, 0.5)',
+        width: '158rem',
+        zindex: 30,
+        transitionIn: 'fadeInUp',
+        transitionOut: 'comingOut',
+        navigateArrows: false,
+        navigateCaption: false,
+        onOpening: function() {
+            $('body').width($('body').width()).addClass('lock');
+        },
+        onClosing: function() {
+            $('body').width('').removeClass('lock');
+        },
+    });
+    $('.popup-map').click(function () {
+        $('.modal-map').iziModal('open');
+    });
+    $('.popup-map-mob').click(function () {
+        $('.modal-map').iziModal('destroy');
+        $( ".modal-map__content" ).draggable({cursor: 'grabbing'});
+        $('.modal-map').fadeIn(200);
+        $('body').addClass('lock');
+        $('.modal-map__close').click(function () {
+            if ($(window).width() <= 768) {
+                $('.modal-map').fadeOut(200);
+                $('body').removeClass('lock');
+            }
+        });
+    });
+    $( ".map__content" ).draggable({cursor: 'grabbing'});
+    $( ".modal-map__content" ).draggable({cursor: 'grabbing'});
+
     // Article
     $('.article__tab input').change(function () {
         $(this).parent().siblings('.article__tab').removeClass('active')
