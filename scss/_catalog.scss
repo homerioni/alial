@@ -191,6 +191,16 @@
     gap: 3rem;
   }
 
+  &__slider {
+    margin: -4rem 0;
+    padding: 4rem 0;
+
+    .catalog__item {
+      flex: none;
+      max-width: none;
+    }
+  }
+
   &__item {
     flex: 30%;
     max-width: 37.3rem;
@@ -398,6 +408,11 @@
       justify-content: space-between;
       gap: 0;
       row-gap: 4rem;
+    }
+
+    &__slider {
+      margin: -8rem -4rem;
+      padding: 8rem 4rem;
     }
 
     &__item {

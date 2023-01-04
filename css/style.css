@@ -4692,6 +4692,16 @@ body {
       flex-wrap: wrap;
   gap: 3rem;
 }
+.catalog__slider {
+  margin: -4rem 0;
+  padding: 4rem 0;
+}
+.catalog__slider .catalog__item {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  max-width: none;
+}
 .catalog__item {
   -webkit-box-flex: 30%;
       -ms-flex: 30%;
@@ -4891,6 +4901,10 @@ body {
             justify-content: space-between;
     gap: 0;
     row-gap: 4rem;
+  }
+  .catalog__slider {
+    margin: -8rem -4rem;
+    padding: 8rem 4rem;
   }
   .catalog__item {
     -webkit-box-flex: 100%;

@@ -466,17 +466,24 @@ const stages_slider = new Swiper('.stages__slider', {
     },
 });
 
-const similar_products_slider = new Swiper('.similar-products__content', {
+const catalog_slider = new Swiper('.catalog__slider', {
     direction: 'horizontal',
+    speed: 600,
+    grabCursor: true,
     loop: true,
-    slidesPerView: 'auto',
+    spaceBetween: rem(3),
+
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        769: {
+            slidesPerView: 4,
+        },
+    },
 
     navigation: {
-        nextEl: '.similar-products .next',
-        prevEl: '.similar-products .prev',
+        nextEl: '.catalog .next',
+        prevEl: '.catalog .prev',
     },
-
-    autoplay: {
-        delay: 12000,
-    },
-})
+});
