@@ -15,162 +15,141 @@
 
 
 <header class="header">
-    <div class="container header__container-mob mobile">
-        <button type="button" class="header__burger">
-            <span></span>
-        </button>
-        <a href="/" class="header__logo">
-            <img src="img/logo.svg" alt="">
-        </a>
-        <a href="" class="header__phone-mob">
-            <img src="img/header-phone-mob.svg" alt="">
-        </a>
-    </div>
-    <nav class="container header__content">
-        <a href="/" class="header__logo">
-            <img src="img/logo.svg" alt="">
-        </a>
-        <div class="header__language-box">
-            <button type="button" class="header__language-btn">
-                <svg class="header__language-icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15 26.25C21.2132 26.25 26.25 21.2132 26.25 15C26.25 8.7868 21.2132 3.75 15 3.75C8.7868 3.75 3.75 8.7868 3.75 15C3.75 21.2132 8.7868 26.25 15 26.25Z" stroke="#959595" stroke-width="1.5" stroke-miterlimit="10"/>
-                    <path d="M4.39453 11.25H25.6055" stroke="#959595" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M4.39453 18.75H25.6055" stroke="#959595" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M15 25.9453C17.5888 25.9453 19.6875 21.0449 19.6875 15C19.6875 8.95507 17.5888 4.05469 15 4.05469C12.4112 4.05469 10.3125 8.95507 10.3125 15C10.3125 21.0449 12.4112 25.9453 15 25.9453Z" stroke="#959595" stroke-width="1.5" stroke-miterlimit="10"/>
-                </svg>
-                <span>RU</span>
-                <svg class="header__language-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 6L0.669873 -8.15666e-07L9.33013 -5.85621e-08L5 6Z" fill="black"/>
-                </svg>
+    <div class="container">
+        <div class="header__container-mob mobile">
+            <button type="button" class="header__burger">
+                <span></span>
             </button>
-            <ul class="header__language-list">
-                <li class="header__language-link active">
-                    <a>Ru</a>
+            <a href="/" class="header__logo">
+                <img src="img/logo.svg" alt="">
+            </a>
+            <a href="" class="header__phone-mob">
+                <img src="img/header-phone-mob.svg" alt="">
+            </a>
+        </div>
+        <div class="header__content">
+            <a href="/" class="header__logo mobile">
+                <img src="img/logo.svg" alt="">
+            </a>
+            <div class="header__wrap-top">
+                <div>
+                    <a href="/" class="header__logo desktop">
+                        <img src="img/logo.svg" alt="">
+                    </a>
+                    <div class="header__language-box">
+                        <button type="button" class="header__language-btn">
+                            <svg class="header__language-icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 26.25C21.2132 26.25 26.25 21.2132 26.25 15C26.25 8.7868 21.2132 3.75 15 3.75C8.7868 3.75 3.75 8.7868 3.75 15C3.75 21.2132 8.7868 26.25 15 26.25Z" stroke="#959595" stroke-width="1.5" stroke-miterlimit="10"/>
+                                <path d="M4.39453 11.25H25.6055" stroke="#959595" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.39453 18.75H25.6055" stroke="#959595" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15 25.9453C17.5888 25.9453 19.6875 21.0449 19.6875 15C19.6875 8.95507 17.5888 4.05469 15 4.05469C12.4112 4.05469 10.3125 8.95507 10.3125 15C10.3125 21.0449 12.4112 25.9453 15 25.9453Z" stroke="#959595" stroke-width="1.5" stroke-miterlimit="10"/>
+                            </svg>
+                            <span>RU</span>
+                            <svg class="header__language-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 6L0.669873 -8.15666e-07L9.33013 -5.85621e-08L5 6Z" fill="black"/>
+                            </svg>
+                        </button>
+                        <ul class="header__language-list">
+                            <li class="header__language-link active">
+                                <a>Ru</a>
+                            </li>
+                            <li class="header__language-link">
+                                <a href="">En</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="header__phone-box">
+                        <a href="" class="header__phone">8 800 600 28 20</a>
+                        <p class="header__phone-text">Ежедневно 9:00-21:00</p>
+                    </div>
+                    <button type="button" class="button popup-request">
+                        <span>Оставить заявку</span>
+                    </button>
+                </div>
+            </div>
+            <ul class="header__menu">
+                <li class="header__menu-item">
+                    <a href="">
+                        <span>Гидроизоляция</span>
+                    </a>
                 </li>
-                <li class="header__language-link">
-                    <a href="">En</a>
+                <li class="header__menu-item">
+                    <a href="">
+                        <span>Ремонтные составы</span>
+                    </a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="">
+                        <span>Строительные смеси</span>
+                    </a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="">
+                        <span>Огнезащита</span>
+                    </a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="">
+                        <span>Антикоррозия</span>
+                    </a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="" class="header__menu-item-link">
+                        <span>Направления работы</span>
+                        <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 9L0.803849 -9.78799e-07L11.1962 -7.02746e-08L6 9Z" fill="#151313"/>
+                        </svg>
+                    </a>
+                    <ul class="header__list">
+                        <li class="header__list-item">
+                            <a href="">Проектирование</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="">Огнезащита</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="">Антикоррозия</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header__menu-item">
+                    <a href="" class="header__menu-item-link">
+                        <span>О нас</span>
+                        <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 9L0.803849 -9.78799e-07L11.1962 -7.02746e-08L6 9Z" fill="#151313"/>
+                        </svg>
+                    </a>
+                    <ul class="header__list">
+                        <li class="header__list-item">
+                            <a href="">О нас</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="">Реализованные проекты</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header__menu-item">
+                    <a href="">
+                        <span>Новости</span>
+                    </a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="">
+                        <span>Статьи</span>
+                    </a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="">
+                        <span>Контакты</span>
+                    </a>
                 </li>
             </ul>
         </div>
-        <ul class="header__menu">
-            <li class="header__menu-item">
-                <a href="" class="header__menu-item-link">
-                    <span>Главная</span>
-                    <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6 9L0.803849 -9.78799e-07L11.1962 -7.02746e-08L6 9Z" fill="#151313"/>
-                    </svg>
-                </a>
-                <ul class="header__list">
-                    <li class="header__list-item">
-                        <a href="">О нас</a>
-                    </li>
-                    <li class="header__list-item">
-                        <a href="">Новости</a>
-                    </li>
-                    <li class="header__list-item">
-                        <a href="">Реализованные проекты</a>
-                    </li>
-                    <li class="header__list-item">
-                        <a href="">Каталог</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="header__menu-item">
-                <a href="" class="header__menu-item-link">
-                    <span>Гидроизоляция</span>
-                    <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6 9L0.803849 -9.78799e-07L11.1962 -7.02746e-08L6 9Z" fill="#151313"/>
-                    </svg>
-                </a>
-                <ul class="header__list">
-                    <li class="header__list-item">
-                        <a href="">О нас</a>
-                    </li>
-                    <li class="header__list-item">
-                        <a href="">Новости</a>
-                    </li>
-                    <li class="header__list-item">
-                        <a href="">Реализованные проекты</a>
-                    </li>
-                    <li class="header__list-item">
-                        <a href="">Каталог</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="header__menu-item">
-                <a href="" class="header__menu-item-link">
-                    <span>Огнезащита</span>
-                    <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6 9L0.803849 -9.78799e-07L11.1962 -7.02746e-08L6 9Z" fill="#151313"/>
-                    </svg>
-                </a>
-                <ul class="header__list">
-                    <li class="header__list-item">
-                        <a href="">О нас</a>
-                    </li>
-                    <li class="header__list-item">
-                        <a href="">Новости</a>
-                    </li>
-                    <li class="header__list-item">
-                        <a href="">Реализованные проекты</a>
-                    </li>
-                    <li class="header__list-item">
-                        <a href="">Каталог</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="header__menu-item">
-                <a href="" class="header__menu-item-link">
-                    <span>Антикоррозия</span>
-                    <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6 9L0.803849 -9.78799e-07L11.1962 -7.02746e-08L6 9Z" fill="#151313"/>
-                    </svg>
-                </a>
-                <ul class="header__list">
-                    <li class="header__list-item">
-                        <a href="">О нас</a>
-                    </li>
-                    <li class="header__list-item">
-                        <a href="">Новости</a>
-                    </li>
-                    <li class="header__list-item">
-                        <a href="">Реализованные проекты</a>
-                    </li>
-                    <li class="header__list-item">
-                        <a href="">Каталог</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="header__menu-item">
-                <a href="">
-                    <span>Статьи</span>
-                </a>
-            </li>
-            <li class="header__menu-item">
-                <a href="">
-                    <span>Контакты</span>
-                </a>
-            </li>
-        </ul>
-        <div class="header__phone-box">
-            <a href="" class="header__phone">8 800 600 28 20</a>
-            <p class="header__phone-text">Ежедневно 9:00-21:00</p>
+        <div class="header__burger-bg">
+            <button type="button" class="header__close-btn"></button>
         </div>
-        <button type="button" class="header__request-link link popup-request desktop">
-            <span>Заявка</span>
-            <svg width="11" height="14" viewBox="0 0 11 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11 7L0.5 13.0622L0.500001 0.937822L11 7Z" fill="#DE2C2C"/>
-            </svg>
-            <svg width="11" height="14" viewBox="0 0 11 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11 7L0.5 13.0622L0.500001 0.937822L11 7Z" fill="#DE2C2C"/>
-            </svg>
-        </button>
-        <button type="button" class="header__request-link button popup-request mobile">
-            <span>Оставить заявку</span>
-        </button>
-    </nav>
-    <div class="header__burger-bg">
-        <button type="button" class="header__close-btn"></button>
     </div>
 </header>
 
@@ -1683,7 +1662,7 @@
     </div>
 </section>
 <!--Чтобы модалка "modal-work" не выскакивала добавляем атрибут "data-complete"-->
-<section class="modal-work modal">
+<section class="modal-work modal" data-complete>
     <div class="modal-work__content">
         <button type="button" class="modal__close" data-izimodal-close></button>
         <h2 class="modal-work__title">
