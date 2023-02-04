@@ -186,6 +186,13 @@ $(document).ready(function () {
     })
 
     // Product-info
+    $('.prod-info__content input').change(function () {
+        $('.prod-info__content').removeClass('active');
+        $(this).parent().addClass('active');
+        $('.catalog__tab').removeClass('active');
+        $('.catalog__tab[for="'+ $(this).attr('id') +'"]').addClass('active');
+    });
+
     $('.product-info__tab input').change(function () {
         $(this).parent().siblings('.product-info__tab').removeClass('active');
         $(this).parent().addClass('active');

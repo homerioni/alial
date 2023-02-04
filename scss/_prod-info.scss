@@ -1,0 +1,142 @@
+.prod-info {
+  margin-bottom: 18rem;
+
+  &__container {
+    display: flex;
+    gap: 3rem;
+  }
+
+  &__content {
+    display: none;
+    flex-direction: column;
+    gap: 4.4rem;
+    font-size: 2rem;
+    line-height: 2.7rem;
+
+    table, td, th {
+      border: 1px solid black;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+
+    th {
+      padding: 1.6rem 2.4rem;
+      background-color: #F3F3F3;
+      font-weight: 600;
+      font-size: 2.4rem;
+      line-height: 3.2rem;
+    }
+
+    td {
+      padding: 1.6rem 2.4rem;
+      font-weight: 500;
+    }
+
+    > input {
+      display: none;
+    }
+
+    &.active {
+      display: flex;
+    }
+  }
+
+  &__table-horizontal {
+    th {
+      width: 67.2rem;
+      text-align: left;
+    }
+
+    td {
+      width: auto;
+    }
+  }
+
+  &__table-vertical {
+    text-align: center;
+
+    td {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .prod-info {
+    margin-bottom: 20rem;
+
+    &__container {
+      display: block;
+      gap: 3rem;
+    }
+
+    &__content {
+      gap: 4rem;
+      font-size: 3rem;
+      line-height: 4rem;
+
+      table {
+      }
+
+      td {
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+      }
+    }
+
+    &__table-horizontal {
+      th {
+        width: 35rem;
+      }
+    }
+
+    &__table-vertical {
+      width: calc(100% + 8rem);
+      margin: 0 -4rem;
+      padding: 0 4rem;
+      overflow: auto;
+
+      table {
+        border: none;
+      }
+
+      tr {
+        display: flex;
+
+        > * {
+          flex: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 31rem;
+        }
+      }
+
+      th {
+        &:not(:first-child) {
+          border-left: none;
+        }
+      }
+
+      td {
+        &:not(:last-child, :first-child) {
+          border-left: none;
+          border-top: none;
+        }
+
+        &:first-child {
+          border-top: none;
+        }
+
+        &:last-child {
+          border-top: none;
+          border-left: none;
+        }
+      }
+    }
+  }
+}

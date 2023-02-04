@@ -487,3 +487,23 @@ const catalog_slider = new Swiper('.catalog__slider', {
         prevEl: '.catalog .prev',
     },
 });
+
+const similar_slider = new Swiper('.similar-products__slider', {
+    direction: 'horizontal',
+
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: rem(4),
+        },
+        769: {
+            slidesPerView: 3,
+            spaceBetween: rem(3.2),
+        },
+    },
+
+    navigation: {
+        nextEl: '.similar-products .next',
+        prevEl: '.similar-products .prev',
+    },
+});
