@@ -12,6 +12,7 @@
     align-items: center;
     justify-content: space-between;
     height: auto;
+    min-height: 67rem;
     padding: 8rem 0;
   }
 
@@ -93,6 +94,7 @@
 
     &__slide {
       display: block;
+      min-height: auto;
       padding: 6rem 0 0 0;
     }
 

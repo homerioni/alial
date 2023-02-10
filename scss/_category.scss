@@ -22,7 +22,8 @@
   &__content {
     display: flex;
     flex-wrap: wrap;
-    gap: 3rem;
+    column-gap: 3rem;
+    row-gap: 8.4rem;
     margin-bottom: 4.4rem;
   }
 
@@ -41,7 +42,7 @@
 
     &:hover {
       .category__img-box {
-        transform: scale(1.1) translateY(-50%);
+        transform: scale(1.05);
       }
     }
   }
@@ -58,13 +59,12 @@
 
   &__img-box {
     position: absolute;
-    right: 9rem;
-    top: 50%;
-    width: 16.4rem;
-    height: 21.4rem;
-    transform: translateY(-50%);
+    right: 8rem;
+    bottom: 4rem;
+    width: 23.2rem;
+    height: 30.2rem;
     transition: transform .5s ease;
-    transform-origin: right top;
+    transform-origin: bottom;
 
     > img {
       width: 100%;
