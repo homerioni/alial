@@ -211,4 +211,40 @@ $(document).ready(function () {
         })
     })
 
+    // Header search
+    $('.header__search-label input').keyup(function () {
+        if ($(this).val().length > 1) {
+            $('.header__search-content').show();
+        } else {
+            $('.header__search-content').hide();
+        }
+    }).focusin(function () {
+        if ($(this).val().length > 1) {
+            $('.header__search-content').show();
+        } else {
+            $('.header__search-content').hide();
+        }
+    });
+
+    $(document).mouseup( function(e) {
+        let el = $('.header__search-box');
+
+        if ( !el.is(e.target) && el.has(e.target).length === 0 ) {
+            $('.header__search-content').hide();
+        }
+    });
+
+    $('.header__search-btn-mob').click(function () {
+        $('.header__search-box--mobile').fadeIn(200);
+        $('.header__search-label input').focus();
+    });
+
+    $('.search-close').click(function () {
+        $('.header__search-box--mobile').fadeOut(200);
+
+        setTimeout(function () {
+            $('.header__search-label input').val('');
+        }, 201);
+    });
+
 });
